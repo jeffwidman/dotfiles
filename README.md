@@ -25,31 +25,33 @@ configuration files (dotfiles) in this repo.
 
 2. Install desired binaries using your favorite package manager.
   - If on OSX, install [Homebrew](http://brew.sh/)
-  - [`brew bundle` is deprecated](https://github.com/Homebrew/homebrew/issues/32952), so just manually run the homebrew
+  - `brew bundle` [is deprecated](https://github.com/Homebrew/homebrew/issues/32952), so just manually run the Homebrew
     commands listed in `~/.dotfiles/homebrew/Brewfile`
-  - Make sure to Stow gets installed, we'll use this later to symlink the dotfiles.
+  - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 
 3. Install [RVM](http://rvm.io/)
 
 4. Install Prezto:
-    - Install my fork because it includes a plugin for [Atom](http://atom.io):
+    - Install [my fork](https://github.com/jeffwidman/prezto) because it includes a plugin for [Atom](http://atom.io):
     `git clone --recursive git@github.com:jeffwidman/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
-    - The default prezto instructions say to symlink some default config files.
+    - The default prezto instructions say to symlink the default config files.
       *Don't do this*; instead use Stow to symlink your own config files.
 
 5. Now start `stow`'ing the various dotfiles - detailed instructions below.
 
-6. Make ZSH the default shell.
-  a. `$ $EDITOR /etc/shells`
-  b. Append the path to zsh - Homebrew sticks it in `/usr/local/bin/zsh`
-  c. Save and exit
-  d. `$ chsh -s /usr/local/bin/zsh`
+6. Make ZSH the default shell.  
+ 1. `$ $EDITOR /etc/shells`
+ 2. Append the path to zsh - Homebrew sticks it in `/usr/local/bin/zsh`
+ 3. Save and exit
+ 4. `$ chsh -s /usr/local/bin/zsh`
 
 ---
 ##How to symlink a dotfile using `stow`
 
-  - `$ stow PACKAGE_NAME` will symlink all the files inside of it into the root
-  - if you are on an OS with a different path, such as to the fonts folder, then specify the full path
+  - `$ stow PACKAGE_NAME` will symlink all the files inside of the
+  package_name's folder into the user's home folder.
+  - If you are on an OS with a different path, such as to the fonts folder,
+   then specify the full path
   - More info:
       - http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
       - http://taihen.org/managing-dotfiles-with-gnu-stow/
