@@ -1,0 +1,61 @@
+# Jeff Widman's Brewfile
+
+# Install packages using Homebrew for OSX
+# Usage: `brew bundle Brewfile`
+
+# Make sure we’re using the latest Homebrew:
+update
+
+# Upgrade any already-installed formulae:
+upgrade
+
+# Add formulae that duplicate OS X software with updated versions:
+tap homebrew/dupes
+
+# Install all the things:
+install zsh
+install fasd # Fast directory switcher
+install git
+install gibo # quickly access github's git ignore templates
+install less
+install lesspipe # pre-processes various file formats so they can be paged via Less
+install ctags
+install stow
+install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb #TODO: Update once Neovim 1.0 released
+
+# Install all the databases
+install sqlite
+install postgresql
+install mysql
+# install mongo
+
+# Install Python
+install python
+install python3
+
+
+# Install Casks:
+# NOTE: Currently commented out because I'd rather install these manually
+
+# install caskroom/cask/brew-cask
+# cask install atom
+# cask install flux
+# cask install bettertouchtool
+# cask install fantastical
+# cask install iterm2
+# cask install virtualbox
+# cask install vagrant
+# cask install box-sync
+# cask install dropbox
+# cask install google-drive
+# cask install google-chrome
+# cask install firefox
+# cask install google-earth
+# cask install adobe-reader
+# cask install vlc
+
+
+
+# Remove outdated versions from the cellar
+cleanup
+# cask cleanup

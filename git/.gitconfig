@@ -1,0 +1,66 @@
+# Borrowed from https://github.com/matthewmccullough/dotfiles/
+# git-config man page: https://www.kernel.org/pub/software/scm/git/docs/git-config.html
+
+[user]
+  name = Jeff Widman
+  email = jeff@jeffwidman.com
+
+[color]
+# ui = true is a superset of all the more specific color options
+#  as documented at http://book.git-scm.com/5_customizing_git.html
+# When set to always, always use colors in all git commands which are capable of colored output.
+# When false, never. When set to true or auto, use colors only when the output is to the terminal.
+# When more specific variables of color.* are set, they always take precedence over this setting.
+# Defaults to false.
+  ui = auto
+  # diff = auto
+  # status = auto
+  # branch = auto
+
+[color "branch"]
+  #current = yellow reverse
+  #local = yellow
+  #remote = green
+[color "diff"]
+  #meta = yellow bold
+  #frag = magenta bold
+  #old = red bold
+  #new = green bold
+[color "status"]
+  #added = yellow
+  #changed = green
+  #untracked = cyan
+
+[core]
+  excludesfile = ~/.gitignore_global
+  compression = 9
+
+  # Prevent line ending issues--change to 'true' on Windows
+  autocrlf = input
+
+[push]
+  default = simple
+
+[hub]
+  protocol = ssh # Github uses https by default
+
+[gist]
+  private = yes
+  browse = yes
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+
+[url "https://bitbucket.org/"]
+    insteadOf = bb:
+
+[alias]
+[difftool "sourcetree"]
+	cmd = " "
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

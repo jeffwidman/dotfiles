@@ -1,0 +1,7 @@
+# https://github.com/wayneeseguin/rvm/issues/2337#issuecomment-27725675
+# RVM Bash Autocompletion complains if
+# it can't verify it's the first item in $PATH
+# even if it's working fine.
+# Not needed in zsh/prezto/ruby-module, only needed in bash.
+
+# rvm_silence_path_mismatch_check_flag=1

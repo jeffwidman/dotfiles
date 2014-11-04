@@ -1,0 +1,10 @@
+# Run with 'pip install -r requirements.txt'
+
+ipython
+flake8
+pep8
+pyflakes
+pylint
+# virtualenv is included with >= Python 3.4
+virtualenv
+pip-tools
