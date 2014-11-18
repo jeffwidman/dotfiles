@@ -36,6 +36,7 @@ configuration files (dotfiles) in this repo.
     `git clone --recursive git@github.com:jeffwidman/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
     - The default prezto instructions say to symlink the default config files.
       *Don't do this*; instead use Stow to symlink your own config files.
+    - To update Prezto: `git pull && git submodule update --init --recursive`
 
 5. Now start `stow`'ing the various dotfiles - detailed instructions below.
 
@@ -125,7 +126,7 @@ Fonts that I like:
 ---
 ## Thanks
 
-- [@dave-tucker](https://github.com/davetucker/dotfiles) - Initial inspiration,
+- [@dave-tucker](https://github.com/dave-tucker/dotfiles) - Initial inspiration,
 although I totally rebooted my dotfiles several times since then
 - [@chriskempson](https://github.com/chriskempson/base16) - for base16
 - [@sorin-ionescu](https://github.com/sorin-ionescu/prezto) - for prezto
