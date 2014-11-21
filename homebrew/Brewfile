@@ -14,6 +14,7 @@ tap homebrew/dupes
 
 # Install all the things:
 install zsh
+install ssh-copy-id
 install fasd # Fast directory switcher
 install git
 install gibo # quickly access github's git ignore templates
@@ -21,7 +22,6 @@ install less
 install lesspipe # pre-processes various file formats so they can be paged via Less
 install ctags
 install stow
-install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb #TODO: Update once Neovim 1.0 released
 
 # Install all the databases
 install sqlite
