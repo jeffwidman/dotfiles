@@ -22,6 +22,9 @@ install less
 install lesspipe # pre-processes various file formats so they can be paged via Less
 install ctags
 install stow
+install tmux
+install htop
+install ag # Faster grep
 
 # Install all the databases
 install sqlite
