@@ -1,10 +1,10 @@
-'global':
-  'exception-reporting':
-    'userId': '953557f2-9a4c-a351-83b6-8f7fbcd89dda'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '8f9811db1d5fbc710de3a1979f72464717933232'
-  'core': {}
-  'editor':
-    'invisibles': {}
+"*":
+  "exception-reporting":
+    userId: "953557f2-9a4c-a351-83b6-8f7fbcd89dda"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "8f9811db1d5fbc710de3a1979f72464717933232"
+  core: {}
+  editor:
+    invisibles: {}
