@@ -35,29 +35,5 @@ install mysql
 install python
 install python3
 
-
-# Install Casks:
-# NOTE: Currently commented out because I'd rather install these manually
-
-# install caskroom/cask/brew-cask
-# cask install atom
-# cask install flux
-# cask install bettertouchtool
-# cask install fantastical
-# cask install iterm2
-# cask install virtualbox
-# cask install vagrant
-# cask install box-sync
-# cask install dropbox
-# cask install google-drive
-# cask install google-chrome
-# cask install firefox
-# cask install google-earth
-# cask install adobe-reader
-# cask install vlc
-
-
-
 # Remove outdated versions from the cellar
 cleanup
-# cask cleanup
