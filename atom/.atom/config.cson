@@ -8,3 +8,4 @@
   core: {}
   editor:
     invisibles: {}
+    fontSize: 17

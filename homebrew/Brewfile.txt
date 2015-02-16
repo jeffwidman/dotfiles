@@ -30,7 +30,6 @@ install ag # Faster grep
 install sqlite
 install postgresql
 install mysql
-# install mongo
 
 # Install Python
 install python
