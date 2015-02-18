@@ -7,4 +7,5 @@ pyflakes
 pylint
 # virtualenv is included with >= Python 3.4
 virtualenv
+virtualenvwrapper
 pip-tools
