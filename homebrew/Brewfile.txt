@@ -1,7 +1,5 @@
 # Jeff Widman's Brewfile
-
-# Install packages using Homebrew for OSX
-# Usage: `brew bundle Brewfile`
+# TODO Convert to shell script since `brew bundle` is deprecated
 
 # Make sure we’re using the latest Homebrew:
 update
@@ -12,12 +10,22 @@ upgrade
 # Add formulae that duplicate OS X software with updated versions:
 tap homebrew/dupes
 
+# Generally life is simplest to not update OSX default SSH
+# Because making a non-Apple SSH work with the OSX Keychain can be a pain
+# As of OpenSSH 6.5 there's a much more secure encryption format for private keys:
+# https://pthree.org/2014/12/08/super-size-the-strength-of-your-openssh-private-keys/
+# Unfortunately doesn't seem to be supported by FileZilla (as of Feb 18, 2015)
+# Also, no need to install HPN SSH patch per posts from 'djm' here:
+# http://lwn.net/Articles/377723/
+# install ssh
+
+
 # Install all the things:
 install zsh
 install ssh-copy-id
 install fasd # Fast directory switcher
 install git
-install gibo # quickly access github's git ignore templates
+install gibo # quickly access Github's git ignore templates
 install less
 install lesspipe # pre-processes various file formats so they can be paged via Less
 install ctags
@@ -26,14 +34,23 @@ install tmux
 install htop
 install ag # Faster grep
 
-# Install all the databases
+# Databases
 install sqlite
 install postgresql
 install mysql
+install redis
 
-# Install Python
+# Python
 install python
 install python3
+
+# Ruby: install using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
+
+
+# Neovim
+# I prefer over Vim for the simple reason they accepted one of my patches ;)
+brew tap neovim/homebrew-neovim
+brew install --HEAD neovim
 
 # Remove outdated versions from the cellar
 cleanup
