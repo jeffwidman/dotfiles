@@ -1,6 +1,7 @@
 "*":
   editor:
     invisibles: {}
+    tabLength: 4
   core:
     themes: [
       "atom-dark-ui"
@@ -10,3 +11,6 @@
     userId: "f8b42441-9e5a-b0a5-3076-474dbe6b2797"
   welcome:
     showOnStartup: false
+  linter: {}
+  "autocomplete-plus":
+    autoActivationDelay: 150

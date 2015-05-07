@@ -160,3 +160,7 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+
+# Integrate iTerm2 and Tmux
+# https://github.com/sorin-ionescu/prezto/tree/master/modules/tmux#iterm2-integration
+zstyle ':prezto:module:tmux:iterm' integrate 'yes'

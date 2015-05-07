@@ -52,5 +52,11 @@ install python3
 brew tap neovim/homebrew-neovim
 brew install --HEAD neovim
 
+# Quicklook plugins
+brew tap caskroom/cask
+brew install brew-cask
+brew cask install qlstephen betterzipql
+
+
 # Remove outdated versions from the cellar
 cleanup

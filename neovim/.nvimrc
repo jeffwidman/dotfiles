@@ -7,7 +7,7 @@
 " Index:
 " ------------
 
-" Vundle install script
+" Vundle install script # TODO Look into swapping to Vim Plug
 " Plugins
 " Vundle finish script
 " My plugin settings
@@ -45,6 +45,8 @@
     "-----------------------
     " Add your plugins here
     "-----------------------
+
+""    Plugin 'justinmk/vim-sneak'
 
 ""    Plugin 'chriskempson/base16-vim'                " A bunch of themes... solarized, monokai, etc
 ""    Plugin 'SirVer/ultisnips'
