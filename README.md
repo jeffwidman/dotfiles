@@ -60,7 +60,7 @@ configuration files (dotfiles) in this repo.
 ---
 ##List of config files
 
- - Atom - Settings are stowable, but packages purposefully excluded. Use `$ apm stars --install` to install all packages I've starred on [atom.io/packages](https://atom.io/packages).
+ - Atom - Settings are stowable, but packages purposefully excluded. Use `$ apm stars --install` to install all packages I've [starred](https://atom.io/users/jeffwidman/stars) on [atom.io/packages](https://atom.io/packages).
  - bash
  - fonts - if you're not on OSX, you'll likely need to specify a different path when stowing
  - git
