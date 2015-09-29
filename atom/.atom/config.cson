@@ -1,7 +1,9 @@
 "*":
   editor:
     invisibles: {}
-    tabLength: 4
+    showInvisibles: true
+    showIndentGuide: true
+    fontSize: 15
   core:
     themes: [
       "atom-dark-ui"
