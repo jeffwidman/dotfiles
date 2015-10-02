@@ -65,6 +65,7 @@ configuration files (dotfiles) in this repo.
  - fonts - if you're not on OSX, you'll likely need to specify a different path when stowing
  - git
  - homebrew - not stowable
+ - OS X Hosts GUI - not stowable, install from https://github.com/specialunderwear/Hosts.prefpane
  - iTerm2
  - neovim - I prefer over Vim for the simple reason they accepted one of my patches ;)
  - osx
