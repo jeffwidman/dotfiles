@@ -82,7 +82,6 @@ configuration files (dotfiles) in this repo.
  - fonts - if you're not on OSX, you'll likely need to specify a different path when stowing
  - git
  - Homebrew Brewfile - stowable, `brew bundle --global` will use $HOME/.Brewfile
- - iTerm2
  - neovim - I prefer over Vim for the simple reason they accepted one of my patches ;)
  - osx
  - python - not stowable, use `pip install -r ~/.dotfiles/python/requirements.txt`
