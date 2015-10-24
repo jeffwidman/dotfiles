@@ -29,9 +29,10 @@ configuration files (dotfiles) in this repo.
       `git clone https://github.com/jeffwidman/dotfiles.git ~/.dotfiles`
 
 3. Install desired binaries using your favorite package manager.
-  - If on OSX, install [Homebrew](http://brew.sh/)
-    - Install Homebrew Bundle: `$ brew tap Homebrew/bundle`
-    - `$ brew bundle check --file=~/.dotfiles/homebrew/.Brewfile`
+  - If on OSX, use Homebrew:
+    1. Install [Homebrew](http://brew.sh/).
+    2. Install [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle): `$ brew tap Homebrew/bundle`
+    3. `$ brew bundle check --file=~/.dotfiles/homebrew/.Brewfile`
   - Install Ruby using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 
@@ -51,10 +52,9 @@ configuration files (dotfiles) in this repo.
   - To update Prezto: `git pull && git submodule update --init --recursive`
 
 5. Now use `stow` to symlink the various config files:
-  - `$ cd ~/.dotfiles`
-  - `$ stow PACKAGE_NAME` will symlink all the files inside of the package_name's folder into the user's home folder.
+  - `$ stow ~/.dotfiles/PACKAGE_NAME` will symlink all the files inside of the package_name's folder into the user's home folder.
   - Stow thoughtfully raises an error if the symlink destination already exists. For example, installing ZSH creates a default `~/.zshrc` and `~/.zshlogin`. Just delete these default files before stowing your customized versions.
-  - If you are on an OS with a different path, such as to the fonts folder, then specify the full path
+  - If using a different OS than OS X, some packages may store their config files at a different location. For example, the fonts folder. Just specify the full destination path for Stow.
   - More info:
      - http://brandon.invergo.net/news/2012-05-26-using-gnu-stow-to-manage-your-dotfiles.html
      - http://taihen.org/managing-dotfiles-with-gnu-stow/
@@ -62,17 +62,17 @@ configuration files (dotfiles) in this repo.
   - Several config files aren't `stow`able--review the list below
 
 6. Other apps I commonly install:
-    [atom](https://atom.io/)
-    [iTerm2](https://www.iterm2.com/downloads.html)
-    [Cyberduck](https://cyberduck.io/?l=en)
-    [PGAdmin](http://www.pgadmin.org/download/macosx.php)
-    [MySQLWorkbench](http://dev.mysql.com/downloads/workbench/)
-    [SourceTree](https://www.sourcetreeapp.com/)
-    [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-    [Vagrant](https://www.vagrantup.com/downloads.html)
-    [Xtrafinder](https://www.trankynam.com/xtrafinder/)
-    [BetterTouchTool](http://www.bettertouchtool.net/)
-    [OS X /etc/hosts GUI](https://github.com/specialunderwear/Hosts.prefpane)
+  - [atom](https://atom.io/)
+  - [iTerm2](https://www.iterm2.com/downloads.html)
+  - [Cyberduck](https://cyberduck.io/?l=en)
+  - [PGAdmin](http://www.pgadmin.org/download/macosx.php)
+  - [MySQLWorkbench](http://dev.mysql.com/downloads/workbench/)
+  - [SourceTree](https://www.sourcetreeapp.com/)
+  - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+  - [Vagrant](https://www.vagrantup.com/downloads.html)
+  - [Xtrafinder](https://www.trankynam.com/xtrafinder/)
+  - [BetterTouchTool](http://www.bettertouchtool.net/)
+  - [OS X /etc/hosts GUI](https://github.com/specialunderwear/Hosts.prefpane)
 
 ---
 ##List of config files
