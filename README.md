@@ -27,8 +27,9 @@ configuration files (dotfiles) in this repo.
 
 2. Install desired binaries using your favorite package manager.
   - If on OSX, install [Homebrew](http://brew.sh/)
-  - `brew bundle` [is deprecated](https://github.com/Homebrew/homebrew/issues/32952), so just manually run the Homebrew commands listed in `~/.dotfiles/homebrew/Brewfile`
-  - For Ruby, install using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
+    - Install Homebrew Bundle: `$ brew tap Homebrew/bundle`
+    - `$ brew bundle check --file=~/.dotfiles/homebrew/.Brewfile`
+  - Install Ruby using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 
 3. Make ZSH the default shell.  
@@ -64,8 +65,8 @@ configuration files (dotfiles) in this repo.
  - bash
  - fonts - if you're not on OSX, you'll likely need to specify a different path when stowing
  - git
- - homebrew - not stowable
  - OS X Hosts GUI - not stowable, install from https://github.com/specialunderwear/Hosts.prefpane
+ - Homebrew Brewfile - stowable, `brew bundle --global` will use $HOME/.Brewfile
  - iTerm2
  - neovim - I prefer over Vim for the simple reason they accepted one of my patches ;)
  - osx

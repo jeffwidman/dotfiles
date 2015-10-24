@@ -1,14 +1,11 @@
 # Jeff Widman's Brewfile
-# TODO Convert to shell script since `brew bundle` is deprecated
+# To make it so Homebrew can handle Brewfiles:
+#   `brew tap Homebrew/bundle`
+#   `brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
 
-# Make sure we’re using the latest Homebrew:
-update
-
-# Upgrade any already-installed formulae:
-upgrade
 
 # Add formulae that duplicate OS X software with updated versions:
-tap homebrew/dupes
+tap 'homebrew/dupes'
 
 # Generally life is simplest to not update OSX default SSH
 # Because making a non-Apple SSH work with the OSX Keychain can be a pain
@@ -17,46 +14,42 @@ tap homebrew/dupes
 # Unfortunately doesn't seem to be supported by FileZilla (as of Feb 18, 2015)
 # Also, no need to install HPN SSH patch per posts from 'djm' here:
 # http://lwn.net/Articles/377723/
-# install ssh
+# brew 'homebrew/dupes/ssh'
 
 
 # Install all the things:
-install zsh
-install ssh-copy-id
-install fasd # Fast directory switcher
-install git
-install gibo # quickly access Github's git ignore templates
-install less
-install lesspipe # pre-processes various file formats so they can be paged via Less
-install ctags
-install stow
-install tmux
-install htop
-install ag # Faster grep
+brew 'zsh'
+brew 'ssh-copy-id'
+brew 'fasd' # Fast directory switcher
+brew 'git'
+brew 'gibo' # quickly access Github's git ignore templates
+brew 'homebrew/dupes/less'
+brew 'lesspipe' # pre-processes various file formats so they can be paged via Less
+brew 'ctags'
+brew 'stow'
+brew 'tmux'
+brew 'htop'
+brew 'ag' # Faster grep
 
 # Databases
-install sqlite
-install postgresql
-install mysql
-install redis
+brew 'sqlite'
+brew 'postgresql'
+brew 'mysql'
+brew 'redis'
 
 # Python
-install python
-install python3
+brew 'python'
+brew 'python3'
 
 # Ruby: install using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
 
-
 # Neovim
 # I prefer over Vim for the simple reason they accepted one of my patches ;)
-brew tap neovim/homebrew-neovim
-brew install --HEAD neovim
+tap 'neovim/homebrew-neovim'
+brew 'neovim/neovim/neovim', args: ['HEAD']
 
 # Quicklook plugins
-brew tap caskroom/cask
-brew install brew-cask
-brew cask install qlstephen betterzipql
-
-
-# Remove outdated versions from the cellar
-cleanup
+tap 'caskroom/cask'
+brew 'caskroom/cask/brew-cask'
+cask 'qlstephen'
+cask 'betterzipql'
