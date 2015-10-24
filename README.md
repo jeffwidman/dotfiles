@@ -28,7 +28,7 @@ configuration files (dotfiles) in this repo.
   - If cloning to a server without a Github-connected SSH key use 'https' instead:
       `git clone https://github.com/jeffwidman/dotfiles.git ~/.dotfiles`
 
-3. Install desired binaries using your favorite package manager.
+3. Install desired binaries using your favorite package manager:
   - If on OSX, use Homebrew:
     1. Install [Homebrew](http://brew.sh/).
     2. Install [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle): `$ brew tap Homebrew/bundle`
@@ -36,7 +36,7 @@ configuration files (dotfiles) in this repo.
   - Install Ruby using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 
-4. Make ZSH the default shell.  
+4. Make ZSH the default shell:
   1. `$ sudo $EDITOR /etc/shells`
   2. Append the path to zsh - Homebrew sticks it in `/usr/local/bin/zsh`
   3. Save and exit
