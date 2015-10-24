@@ -21,24 +21,27 @@ configuration files (dotfiles) in this repo.
 ---
 ##Install steps on a clean OSX machine:
 
-1. `git clone git@github.com:jeffwidman/dotfiles.git ~/.dotfiles`
+1. Make hidden files/folder [visible in Finder](http://apple.stackexchange.com/questions/99213/is-it-possible-to-always-show-hidden-dotfiles-in-open-save-dialogs):
+      `defaults write -g AppleShowAllFiles -bool true`
+
+2. `git clone git@github.com:jeffwidman/dotfiles.git ~/.dotfiles`
   - If cloning to a server without a Github-connected SSH key use 'https' instead:
       `git clone https://github.com/jeffwidman/dotfiles.git ~/.dotfiles`
 
-2. Install desired binaries using your favorite package manager.
+3. Install desired binaries using your favorite package manager.
   - If on OSX, install [Homebrew](http://brew.sh/)
     - Install Homebrew Bundle: `$ brew tap Homebrew/bundle`
     - `$ brew bundle check --file=~/.dotfiles/homebrew/.Brewfile`
   - Install Ruby using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 
-3. Make ZSH the default shell.  
-  1. `$ $EDITOR /etc/shells`
+4. Make ZSH the default shell.  
+  1. `$ sudo $EDITOR /etc/shells`
   2. Append the path to zsh - Homebrew sticks it in `/usr/local/bin/zsh`
   3. Save and exit
   4. `$ chsh -s /usr/local/bin/zsh`
 
-4. Install Prezto:
+5. Install Prezto:
   - Install [my fork](https://github.com/jeffwidman/prezto) because it includes a plugin for [Atom](http://atom.io).
 
   `git clone --recursive git@github.com:jeffwidman/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
@@ -58,6 +61,19 @@ configuration files (dotfiles) in this repo.
      - http://kianmeng.org/blog/2014/03/08/using-gnu-stow-to-manage-your-dotfiles/
   - Several config files aren't `stow`able--review the list below
 
+6. Other apps I commonly install:
+    [atom](https://atom.io/)
+    [iTerm2](https://www.iterm2.com/downloads.html)
+    [Cyberduck](https://cyberduck.io/?l=en)
+    [PGAdmin](http://www.pgadmin.org/download/macosx.php)
+    [MySQLWorkbench](http://dev.mysql.com/downloads/workbench/)
+    [SourceTree](https://www.sourcetreeapp.com/)
+    [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+    [Vagrant](https://www.vagrantup.com/downloads.html)
+    [Xtrafinder](https://www.trankynam.com/xtrafinder/)
+    [BetterTouchTool](http://www.bettertouchtool.net/)
+    [OS X /etc/hosts GUI](https://github.com/specialunderwear/Hosts.prefpane)
+
 ---
 ##List of config files
 
@@ -65,12 +81,11 @@ configuration files (dotfiles) in this repo.
  - bash
  - fonts - if you're not on OSX, you'll likely need to specify a different path when stowing
  - git
- - OS X Hosts GUI - not stowable, install from https://github.com/specialunderwear/Hosts.prefpane
  - Homebrew Brewfile - stowable, `brew bundle --global` will use $HOME/.Brewfile
  - iTerm2
  - neovim - I prefer over Vim for the simple reason they accepted one of my patches ;)
  - osx
- - python - not stowable.
+ - python - not stowable, use `pip install -r ~/.dotfiles/python/requirements.txt`
  - ruby
  - screen
  - tmux - #TODO
@@ -135,5 +150,5 @@ Fonts that I like:
 ---
 ## License
 
-Copyright 2014 Jeff Widman
+Copyright 2015 Jeff Widman
 Licensed under the MIT License
