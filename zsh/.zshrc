@@ -30,13 +30,11 @@ syspip3(){
 
 ### VirtualEnvWrapper
 # Note: maybe these should be in .zshenv rather than .zshrc
-export PROJECT_HOME=$HOME/Code/git
+export PROJECT_HOME=$HOME/Code
 
 # The variable $VIRTUALENVWRAPPER_VIRTUALENV_ARGS tells
 # virtualenvwrapper what arguments to pass to virtualenv.
-# For example, set the value to --no-site-packages to ensure # that all new environments are isolated from the system
-# site-packages directory.
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS='--no-site-packages'
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
 
 
 ### Use Base16 templating system to theme shell colors
