@@ -1,5 +1,5 @@
 # Run with `pip install -r requirements.txt`
-
+ipdb # pdb with ipython integrated
 ipython
 flake8
 pep8
