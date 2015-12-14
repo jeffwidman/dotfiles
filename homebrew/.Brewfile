@@ -34,7 +34,7 @@ brew 'ag' # Faster grep
 # Databases
 brew 'sqlite'
 brew 'postgresql'
-brew 'mysql'
+brew 'mariadb' # in place of MySQL
 brew 'redis'
 
 # Python
