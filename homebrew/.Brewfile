@@ -30,6 +30,7 @@ brew 'stow'
 brew 'tmux'
 brew 'htop'
 brew 'ag' # Faster grep
+brew 'ncdu' # ncurses-based directory/file size viewer
 
 # Databases
 brew 'sqlite'
