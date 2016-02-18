@@ -1,10 +1,14 @@
 # Run with `pip install -r requirements.txt`
+
 ipdb # pdb with ipython integrated
 ipython
+
+## Linters ##
 flake8
-pep8
-pyflakes
-pylint
+pydocstyle
+# prospector
+
+## Packaging ##
 # virtualenv is included with >= Python 3.4
 virtualenv
 virtualenvwrapper
