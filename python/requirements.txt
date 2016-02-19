@@ -5,6 +5,7 @@ ipython
 
 ## Linters ##
 flake8
+pep8-naming
 pydocstyle
 # prospector
 
