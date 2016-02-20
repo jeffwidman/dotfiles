@@ -50,7 +50,6 @@ tap 'neovim/homebrew-neovim'
 brew 'neovim/neovim/neovim', args: ['HEAD']
 
 # Quicklook plugins
-tap 'caskroom/cask'
-brew 'caskroom/cask/brew-cask'
-cask 'qlstephen'
-cask 'betterzipql'
+tap 'Caskroom/cask'
+brew 'Caskroom/cask/qlstephen'
+brew 'Caskroom/cask/betterzipql'
