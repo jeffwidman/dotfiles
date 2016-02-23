@@ -11,8 +11,13 @@
     showInvisibles: true
   "exception-reporting":
     userId: "f8b42441-9e5a-b0a5-3076-474dbe6b2797"
+  linter:
+    errorPanelHeight: 160
+    showErrorPanel: false
+  "linter-flake8":
+    ignoreErrorCodes: [
+      "E128"
+      "E501"
+    ]
   welcome:
     showOnStartup: false
-  linter: {}
-  "autocomplete-plus":
-    autoActivationDelay: 150
