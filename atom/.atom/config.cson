@@ -1,6 +1,6 @@
 "*":
   "atom-beautify":
-    _analyticsUserId: "019c06e6-ef8e-4260-823a-90f039b27d0e"
+    analytics: false
   "autocomplete-plus":
     autoActivationDelay: 150
   core:
