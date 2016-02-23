@@ -49,11 +49,12 @@ configuration files (dotfiles) in this repo.
   `git clone --recursive git@github.com:jeffwidman/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
 
   - The default prezto instructions say to symlink the default config files.
-    **Don't do this**; instead use Stow to symlink your own config files.
+    **Don't do this**; instead use Stow to symlink your own config files (instructions below).
   - To update Prezto: `git pull && git submodule update --init --recursive`
 
 5. Now use `stow` to symlink the various config files:
-  - `$ stow ~/.dotfiles/PACKAGE_NAME` will symlink all the files inside of the package_name's folder into the user's home folder.
+  - `$ cd ~/.dotfiles/`
+  - `$ stow PACKAGE_NAME` will symlink all the files inside of the package_name's folder into the parent directory (in this case, the user's home folder.)
   - Stow thoughtfully raises an error if the symlink destination already exists. For example, installing ZSH creates a default `~/.zshrc` and `~/.zshlogin`. Just delete these default files before stowing your customized versions.
   - If using a different OS than OS X, some packages may store their config files at a different location. For example, the fonts folder. Just specify the full destination path for Stow.
   - More info:
