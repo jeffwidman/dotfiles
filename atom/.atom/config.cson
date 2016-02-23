@@ -1,14 +1,14 @@
 "*":
-  editor:
-    invisibles: {}
-    showInvisibles: true
-    showIndentGuide: true
-    fontSize: 15
   core:
     themes: [
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
+  editor:
+    fontSize: 16
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
   "exception-reporting":
     userId: "f8b42441-9e5a-b0a5-3076-474dbe6b2797"
   welcome:
