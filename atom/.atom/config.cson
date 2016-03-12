@@ -23,7 +23,7 @@
       "E128"
       "E501"
     ]
-  "linter-pep257":
+  "linter-pydocstyle":
     ignoreCodes: "D100,D101,D102,D103,D104,D105"
   welcome:
     showOnStartup: false
