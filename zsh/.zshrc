@@ -14,8 +14,6 @@ export PGDATA="/usr/local/var/postgres"
 
 ### VirtualEnv
 # Note: maybe these should be in .zshenv rather than .zshrc
-# virtualenv should use Distribute instead of legacy setuptools
-export VIRTUALENV_DISTRIBUTE=true
 
 # pip should only run if there is a virtualenv currently activated
 # prevents accidentally installing packages without a virtualenv
