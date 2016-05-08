@@ -9,12 +9,12 @@ fi
 
 # Customize to your needs...
 
-### Postgres
+
+### PostgreSQL ###
 export PGDATA="/usr/local/var/postgres"
 
-### VirtualEnv
-# Note: maybe these should be in .zshenv rather than .zshrc
 
+### VirtualEnv ###
 # pip should only run if there is a virtualenv currently activated
 # prevents accidentally installing packages without a virtualenv
 export PIP_REQUIRE_VIRTUALENV=true
@@ -26,7 +26,8 @@ syspip3(){
    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
 
-### VirtualEnvWrapper
+
+### VirtualEnvWrapper ###
 # Note: maybe these should be in .zshenv rather than .zshrc
 export PROJECT_HOME=$HOME/Code
 
@@ -35,13 +36,13 @@ export PROJECT_HOME=$HOME/Code
 # export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
 
 
-### Use Base16 templating system to theme shell colors
+### Use Base16 templating system to theme shell colors ###
 # if [[ -s "$HOME/.config/base16-shell/base16-ocean.dark.sh" ]]; then
 #   source "$HOME/.config/base16-shell/base16-ocean.dark.sh"
 # fi
 
 
-### Extra ZSH options
+### Extra ZSH options ###
 # If querying the user before executing `rm *' or `rm
 # path/*', first wait ten seconds and ignore anything typed
 # in that time. This avoids the problem of reflexively
