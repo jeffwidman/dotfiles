@@ -25,7 +25,6 @@ zstyle ':prezto:load' pmodule \
   'terminal' \
   'editor' \
   'osx' \
-  'notify' \
   'homebrew' \
   'atom' \
   'git' \
