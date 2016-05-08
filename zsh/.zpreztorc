@@ -29,6 +29,7 @@ zstyle ':prezto:load' pmodule \
   'homebrew' \
   'atom' \
   'git' \
+  'rsync' \
   'ruby' \
   'python' \
   'node' \
