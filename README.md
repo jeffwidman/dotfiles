@@ -34,6 +34,13 @@ configuration files (dotfiles) in this repo.
     2. Install [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle): `$ brew tap Homebrew/bundle`
     3. `$ brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
     After the `.Brewfile` is symlinked into ``~/.Brewfile`, just use `$ brew bundle --global`.
+  - Installing Node:
+    1. Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew for managing Node.
+    2. Install `nvm` via Homebrew
+      - `nvm` team discourages installing `nvm` via Homebrew, but it's much easier
+      to stay up with latest version that way.
+      - I set `export NVM_DIR="$HOME/.nvm"` in `.zshrc` so that upgrading/reinstalling
+      `nvm` via Homebrew doesn't wipe out `nvm` installed Nodes.
   - Install Ruby using [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 

@@ -41,6 +41,13 @@ export PROJECT_HOME=$HOME/Code
 export PATH="$PATH:$HOME/.rvm/bin"
 
 
+### NVM ###
+# Tell NVM where to store nodes.
+# This way, I can manage nvm via homebrew w/o it destroying
+# nvm-installed nodes upon upgrade.
+export NVM_DIR="$HOME/.nvm"
+
+
 ### Use Base16 templating system to theme shell colors ###
 # if [[ -s "$HOME/.config/base16-shell/base16-ocean.dark.sh" ]]; then
 #   source "$HOME/.config/base16-shell/base16-ocean.dark.sh"

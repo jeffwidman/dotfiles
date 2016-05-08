@@ -31,6 +31,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'ruby' \
   'python' \
+  'node' \
   'history' \
   'directory' \
   'spectrum' \
