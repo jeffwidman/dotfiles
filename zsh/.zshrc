@@ -36,6 +36,11 @@ export PROJECT_HOME=$HOME/Code
 # export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
 
 
+### RVM ###
+# Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin"
+
+
 ### Use Base16 templating system to theme shell colors ###
 # if [[ -s "$HOME/.config/base16-shell/base16-ocean.dark.sh" ]]; then
 #   source "$HOME/.config/base16-shell/base16-ocean.dark.sh"
@@ -49,5 +54,3 @@ export PROJECT_HOME=$HOME/Code
 # answering `yes' to the query when one didn't really mean
 # it.
 setopt RM_STAR_WAIT
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -34,7 +34,7 @@ configuration files (dotfiles) in this repo.
     2. Install [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle): `$ brew tap Homebrew/bundle`
     3. `$ brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
     After the `.Brewfile` is symlinked into ``~/.Brewfile`, just use `$ brew bundle --global`.
-  - Install Ruby using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
+  - Install Ruby using [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 
 4. Make ZSH the default shell:
