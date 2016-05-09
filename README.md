@@ -34,14 +34,16 @@ configuration files (dotfiles) in this repo.
     2. Install [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle): `$ brew tap Homebrew/bundle`
     3. `$ brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
     After the `.Brewfile` is symlinked into ``~/.Brewfile`, just use `$ brew bundle --global`.
-  - Install Ruby using [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
+  - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
+  - Ruby:
+    1. Use [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage
+    gemsets, ruby versions, etc.
   - Node:
     1. Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew for
     managing Node.
     2. Install/upgrade [manually using `git`]
     (https://github.com/creationix/nvm#manual-install) rather than `nvm`'s
     `install.sh` script.
-  - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
 
 4. Make ZSH the default shell:
   1. `$ sudo vim /etc/shells`
@@ -50,11 +52,12 @@ configuration files (dotfiles) in this repo.
   4. `$ chsh -s /usr/local/bin/zsh`
 
 5. Install Prezto:
-  - Install [my fork](https://github.com/jeffwidman/prezto) because it includes a plugin for [Atom](http://atom.io).
+  - Install [my fork](https://github.com/jeffwidman/prezto) because it includes
+  a plugin for [Atom](http://atom.io).
 
   `git clone --recursive git@github.com:jeffwidman/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
 
-  - The default prezto instructions say to symlink the default config files.
+  - The default Prezto instructions say to symlink the default config files.
     **Don't do this**; instead use Stow to symlink your own config files (instructions below).
   - To update Prezto: `git pull && git submodule update --init --recursive`
 

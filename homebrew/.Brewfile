@@ -42,7 +42,8 @@ brew 'redis'
 brew 'python'
 brew 'python3'
 
-# Ruby: install using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
+# Ruby
+# Use [RVM](http://rvm.io/) instead of Homebrew.
 
 # Node
 # Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew.
