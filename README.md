@@ -44,6 +44,10 @@ configuration files (dotfiles) in this repo.
     2. Install/upgrade [manually using `git`]
     (https://github.com/creationix/nvm#manual-install) rather than `nvm`'s
     `install.sh` script.
+    3. Unfortunately, `nvm` drastically slows shell startup time due to
+    https://github.com/creationix/nvm/issues/966, so after installing node
+    (`nvm install node`), run `nvm unalias default` to disable the alias. Just
+    remember to first run `nvm use node` whenever you want to run webpack, etc.
 
 4. Make ZSH the default shell:
   1. `$ sudo vim /etc/shells`
