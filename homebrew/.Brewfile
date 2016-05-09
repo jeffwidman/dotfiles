@@ -44,12 +44,10 @@ brew 'python3'
 
 # Ruby: install using [RVM](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
 
-# Node:
-# Manage Node via NVM. NVM team discourages installing via brew, but it's the
-# easiest way to keep up to date with NVM versions. I set
-# `export NVM_DIR="$HOME/.nvm"` in .zshrc so that upgrading nvm doesn't wipe out
-# nvm-installed nodes.
-brew 'nvm'
+# Node
+# Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew.
+# Install manually using git clone rather than the install script:
+# https://github.com/creationix/nvm#manual-install
 
 # Neovim
 # I prefer over Vim for the simple reason they accepted one of my patches ;)

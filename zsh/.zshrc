@@ -42,9 +42,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 
 ### NVM ###
-# Tell NVM where to store nodes.
-# This way, I can manage nvm via homebrew w/o it destroying
-# nvm-installed nodes upon upgrade.
+# Tell NVM where to store its nodes.
 export NVM_DIR="$HOME/.nvm"
 
 
