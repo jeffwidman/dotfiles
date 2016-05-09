@@ -10,10 +10,6 @@ fi
 # Customize to your needs...
 
 
-### PostgreSQL ###
-export PGDATA="/usr/local/var/postgres"
-
-
 ### VirtualEnv ###
 # pip should only run if there is a virtualenv currently activated
 # prevents accidentally installing packages without a virtualenv
@@ -25,25 +21,6 @@ syspip(){
 syspip3(){
    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
-
-
-### VirtualEnvWrapper ###
-# Note: maybe these should be in .zshenv rather than .zshrc
-export PROJECT_HOME=$HOME/Code
-
-# The variable $VIRTUALENVWRAPPER_VIRTUALENV_ARGS tells
-# virtualenvwrapper what arguments to pass to virtualenv.
-# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
-
-
-### RVM ###
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
-
-
-### NVM ###
-# Tell NVM where to store its nodes.
-export NVM_DIR="$HOME/.nvm"
 
 
 ### Use Base16 templating system to theme shell colors ###
