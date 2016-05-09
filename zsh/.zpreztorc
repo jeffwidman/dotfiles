@@ -44,6 +44,13 @@ zstyle ':prezto:load' pmodule \
   'prompt'
 
 #
+# Autosuggestions
+#
+
+# Set the query found color.
+# zstyle ':prezto:module:autosuggestions:color' found ''
+
+#
 # Editor
 #
 
@@ -134,7 +141,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
    'line' \
    'cursor' \
    'root'
-#
+
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
 #   'builtin' 'bg=blue' \
@@ -164,6 +171,5 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
-# Integrate iTerm2 and Tmux
-# https://github.com/sorin-ionescu/prezto/tree/master/modules/tmux#iterm2-integration
-zstyle ':prezto:module:tmux:iterm' integrate 'yes'
+# Integrate with iTerm2.
+# zstyle ':prezto:module:tmux:iterm' integrate 'yes'
