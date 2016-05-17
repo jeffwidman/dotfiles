@@ -31,3 +31,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 ### NVM ###
 # Tell NVM where to store its nodes.
 export NVM_DIR="$HOME/.nvm"
+
+
+### Ansible ###
+# Tell Ansible where to look for the vault password.
+# For security, NEVER commit this file to source control.
+export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.vault_pass.txt"
