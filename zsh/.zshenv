@@ -34,6 +34,8 @@ export NVM_DIR="$HOME/.nvm"
 
 
 ### Ansible ###
-# Tell Ansible where to look for the vault password.
+# If I've created a vault password file, tell Ansible to use it.
 # For security, NEVER commit this file to source control.
-export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.vault_pass.txt"
+if [[ -s "${ZDOTDIR:-$HOME}/.vault_pass.txt" ]]; then
+    export ANSIBLE_VAULT_PASSWORD_FILE="${ZDOTDIR:-$HOME}/.vault_pass.txt"
+fi
