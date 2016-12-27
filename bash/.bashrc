@@ -9,9 +9,6 @@ if [[ $OSTYPE == darwin* ]]; then
     export PATH=/usr/local/bin:/usr/local/sbin:"$PATH"
 fi
 
-### VirtualEnv
-# virtualenv should use Distribute instead of legacy setuptools
-export VIRTUALENV_DISTRIBUTE=true
 
 # pip should only run if there is a virtualenv currently activated
 export PIP_REQUIRE_VIRTUALENV=true
@@ -23,12 +20,14 @@ syspip3(){
    PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
 
-### VirtualEnvWrapper
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Code/git
-source /usr/local/bin/virtualenvwrapper.sh
-
-
 
 ### Postgres
 export PGDATA="/usr/local/var/postgres"
+
+
+### VirtualEnvWrapper ###
+export PROJECT_HOME="$HOME/Code"
+# The variable $VIRTUALENVWRAPPER_VIRTUALENV_ARGS tells
+# virtualenvwrapper what arguments to pass to virtualenv.
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
+source /usr/local/bin/virtualenvwrapper.sh

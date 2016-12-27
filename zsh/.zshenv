@@ -16,15 +16,6 @@ fi
 export PGDATA="/usr/local/var/postgres"
 
 
-### VirtualEnvWrapper ###
-export PROJECT_HOME=$HOME/Code
-# The variable $VIRTUALENVWRAPPER_VIRTUALENV_ARGS tells
-# virtualenvwrapper what arguments to pass to virtualenv.
-# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
-
-
-
-
 ### NVM ###
 # Tell NVM where to store its nodes.
 export NVM_DIR="$HOME/.nvm"
@@ -36,3 +27,10 @@ export NVM_DIR="$HOME/.nvm"
 if [[ -s "${ZDOTDIR:-$HOME}/.ansible_vault_pass.txt" ]]; then
     export ANSIBLE_VAULT_PASSWORD_FILE="${ZDOTDIR:-$HOME}/.ansible_vault_pass.txt"
 fi
+
+
+### VirtualEnvWrapper ###
+export PROJECT_HOME="$HOME/Code"
+# The variable $VIRTUALENVWRAPPER_VIRTUALENV_ARGS tells
+# virtualenvwrapper what arguments to pass to virtualenv.
+# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
