@@ -37,9 +37,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 # verify it's the first item in path... fix here:
 # https://github.com/wayneeseguin/rvm/issues/2337#issuecomment-27725675
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ### Postgres
