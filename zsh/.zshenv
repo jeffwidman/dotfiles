@@ -34,3 +34,7 @@ export PROJECT_HOME="$HOME/Code"
 # The variable $VIRTUALENVWRAPPER_VIRTUALENV_ARGS tells
 # virtualenvwrapper what arguments to pass to virtualenv.
 # export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
+
+
+### XDG Configs pull directly from dotfiles ###
+export XDG_CONFIG_HOME="$HOME/.dotfiles"

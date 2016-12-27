@@ -38,3 +38,7 @@ export PROJECT_HOME="$HOME/Code"
 # virtualenvwrapper what arguments to pass to virtualenv.
 # export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
 source /usr/local/bin/virtualenvwrapper.sh
+
+
+### XDG Configs pull directly from dotfiles ###
+export XDG_CONFIG_HOME="$HOME/.dotfiles"

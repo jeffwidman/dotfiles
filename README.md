@@ -96,7 +96,7 @@ configuration files (dotfiles) in this repo.
  - bash
  - git
  - Homebrew Brewfile - stowable, `brew bundle --global` will use $HOME/.Brewfile
- - neovim - I prefer over Vim for the simple reason they accepted one of my patches ;)
+ - nvim - Neovim. No need to stow as it respects `$XDG_CONFIG_HOME`
  - osx
  - python - not stowable, use `pip install -r ~/.dotfiles/python/requirements.txt`
  - ruby
