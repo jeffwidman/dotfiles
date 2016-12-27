@@ -15,8 +15,8 @@ fi
 ### Ansible ###
 # If I've created a vault password file, tell Ansible to use it.
 # For security, NEVER commit this file to source control.
-if [[ -s "${ZDOTDIR:-$HOME}/.ansible_vault_pass.txt" ]]; then
-    export ANSIBLE_VAULT_PASSWORD_FILE="${ZDOTDIR:-$HOME}/.ansible_vault_pass.txt"
+if [[ -s "$HOME/.ansible_vault_pass.txt" ]]; then
+  export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.ansible_vault_pass.txt"
 fi
 
 
