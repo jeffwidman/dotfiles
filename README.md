@@ -80,13 +80,13 @@ configuration files (dotfiles) in this repo.
   - [atom](https://atom.io/)
   - [iTerm2](https://www.iterm2.com/downloads.html)
   - [Cyberduck](https://cyberduck.io/?l=en)
-  - [PGAdmin](http://www.pgadmin.org/download/macosx.php)
+  - [PGAdmin](https://www.pgadmin.org/download/macosx.php) / [Postico](https://eggerapps.at/postico/)
   - [MySQLWorkbench](http://dev.mysql.com/downloads/workbench/)
+  - [Robomongo](https://robomongo.org/)
   - [SourceTree](https://www.sourcetreeapp.com/)
   - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
   - [Vagrant](https://www.vagrantup.com/downloads.html)
-  - [Xtrafinder](https://www.trankynam.com/xtrafinder/)
-  - [BetterTouchTool](http://www.bettertouchtool.net/)
+  - [BetterTouchTool](https://boastr.net//)
   - [OS X /etc/hosts GUI](https://github.com/specialunderwear/Hosts.prefpane)
 
 ---
@@ -97,10 +97,8 @@ configuration files (dotfiles) in this repo.
  - git
  - Homebrew Brewfile - stowable, `brew bundle --global` will use $HOME/.Brewfile
  - nvim - Neovim. No need to stow as it respects `$XDG_CONFIG_HOME`
- - osx
  - python - not stowable, use `pip install -r ~/.dotfiles/python/requirements.txt`
  - ruby
- - screen
  - tmux - #TODO
  - vim - for when Neovim isn't available
  - vimify - `.inputrc` and `.editrc` make vim commands work in many interactive
