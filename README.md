@@ -111,6 +111,8 @@ configuration files (dotfiles) in this repo.
 ---
 ##Misc Notes:
 
+List of possible macOS customizations: https://mths.be/macos
+
 For themes, check out the [Base16 template system](https://github.com/chriskempson/base16). It includes templates for
 theming many different apps.
 
