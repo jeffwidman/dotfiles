@@ -5,10 +5,10 @@
 
 ### If on OS X:
 if [[ "$OSTYPE" = darwin* ]] ; then
-    # Tell compilers we have a 64 bit architecture
-    # This resolves install issues with mysql, postgres, and
-    # other gems with native non universal binary extensions
-    export ARCHFLAGS="-arch x86_64"
+  # Tell compilers we have a 64 bit architecture
+  # This resolves install issues with mysql, postgres, and
+  # other gems with native non universal binary extensions
+  export ARCHFLAGS="-arch x86_64"
 fi
 
 #
@@ -78,4 +78,4 @@ if [[ ! -d "$TMPDIR" ]]; then
   mkdir -p -m 700 "$TMPDIR"
 fi
 
- TMPPREFIX="${TMPDIR%/}/zsh"
+TMPPREFIX="${TMPDIR%/}/zsh"
