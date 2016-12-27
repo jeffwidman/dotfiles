@@ -28,16 +28,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Code/git
 source /usr/local/bin/virtualenvwrapper.sh
 
-### RVM
-# Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-# Add RVM Bash Completion
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
-# FYI: This works fine, but RVM complains that it can't
-# verify it's the first item in path... fix here:
-# https://github.com/wayneeseguin/rvm/issues/2337#issuecomment-27725675
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 ### Postgres
 export PGDATA="/usr/local/var/postgres"

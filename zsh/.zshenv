@@ -23,9 +23,6 @@ export PROJECT_HOME=$HOME/Code
 # export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
 
 
-### RVM ###
-# Add RVM to PATH for scripting
-export PATH="$PATH:$HOME/.rvm/bin"
 
 
 ### NVM ###
