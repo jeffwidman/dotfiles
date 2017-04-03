@@ -11,6 +11,7 @@
     ]
   editor:
     fontSize: 12
+    preferredLineLength: 79
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
