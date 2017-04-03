@@ -28,5 +28,6 @@
     ]
   "linter-pydocstyle":
     ignoreCodes: "D100,D101,D102,D103,D104,D105"
+  "linter-ui-default": {}
   welcome:
     showOnStartup: false
