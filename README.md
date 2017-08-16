@@ -1,4 +1,4 @@
-#My dotfiles.
+# My dotfiles.
 
 Works on *nix, optimized for OS X.
 
@@ -7,7 +7,7 @@ choose which programs to install.
 
 
 ---
-##Philosophy
+## Philosophy
 
 Initially I tried entirely automating the entire install process, but quickly
 found it wasn't worth the maintenance. Starting from scratch happens so rarely
@@ -19,7 +19,7 @@ configuration files (dotfiles) in this repo.
 
 
 ---
-##Install steps on a clean OSX machine:
+## Install steps on a clean OSX machine:
 
 1. Make hidden files/folder [visible in Finder](http://apple.stackexchange.com/questions/99213/is-it-possible-to-always-show-hidden-dotfiles-in-open-save-dialogs):
       `defaults write -g AppleShowAllFiles -bool true`

@@ -11,8 +11,8 @@
     ]
   editor:
     fontSize: 12
-    preferredLineLength: 79
     invisibles: {}
+    preferredLineLength: 79
     showIndentGuide: true
     showInvisibles: true
   "exception-reporting":
