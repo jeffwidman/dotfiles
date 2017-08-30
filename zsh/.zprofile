@@ -7,7 +7,7 @@
 if [[ "$OSTYPE" = darwin* ]] ; then
   # Tell compilers we have a 64 bit architecture
   # This resolves install issues with mysql, postgres, and
-  # other gems with native non universal binary extensions
+  # other python packages with native non universal binary extensions
   export ARCHFLAGS="-arch x86_64"
 fi
 
