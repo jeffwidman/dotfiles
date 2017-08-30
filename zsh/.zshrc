@@ -15,8 +15,8 @@ fi
 # prevents accidentally installing packages without a virtualenv
 export PIP_REQUIRE_VIRTUALENV=true
 # create syspip workaround
-syspip(){
-  PIP_REQUIRE_VIRTUALENV="" pip "$@"
+syspip2(){
+  PIP_REQUIRE_VIRTUALENV="" pip2 "$@"
 }
 syspip3(){
   PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
