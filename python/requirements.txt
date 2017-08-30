@@ -3,9 +3,12 @@
 ipdb # pdb with ipython integrated
 ipython
 
+pudb  # best debugger around
+
 ## Linters ##
 flake8
 pep8-naming
+pycodestyle
 pydocstyle
 # prospector
 
