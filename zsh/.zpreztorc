@@ -24,6 +24,7 @@ zstyle ':prezto:load' pmodule \
   'environment' \
   'terminal' \
   'editor' \
+  'ssh' \
   'osx' \
   'homebrew' \
   'atom' \
