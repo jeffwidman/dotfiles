@@ -9,6 +9,8 @@ fi
 
 # Customize to your needs...
 
+# Use neovim instead of vi/vim
+alias vi='nvim'
 
 ### Pip (Python) ###
 # pip should only run if there is a virtualenv currently activated
