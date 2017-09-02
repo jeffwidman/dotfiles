@@ -89,6 +89,22 @@ configuration files (dotfiles) in this repo.
   - [BetterTouchTool](https://boastr.net//)
   - [OS X /etc/hosts GUI](https://github.com/specialunderwear/Hosts.prefpane)
 
+7. ZSH completion scripts:
+  Symlink any completion scripts into ``/usr/local/share/zsh/site-functions/``.
+  The filename must begin with an `_` or `zsh` will not read it. Prezto caches
+  the output of `compinit`, to rebuild the cache do: `rm -rf ~/.zcomp* && compinit`
+
+  Note: Many homebrew formula automatically handle installing the formula's
+  completion scripts. For example, `brew install the_silver_searcher`(`ag`)
+  will also install a completion script for `ag` in `/usr/local/share/zsh/site-functions/`.
+
+  Docker completion scripts - I opened https://github.com/sorin-ionescu/prezto/issues/1459 to try to get this into prezto:
+
+    ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
+    ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-completion /usr/local/share/zsh/site-functions/_docker-machine
+    ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
+
+
 ---
 ##List of config files
 
