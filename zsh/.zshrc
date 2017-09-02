@@ -12,6 +12,10 @@ fi
 # Use neovim instead of vi/vim
 alias vi='nvim'
 
+# Open the current directory in Atom.
+# Requires Atom Shell Commands to be installed
+alias att='atom .'
+
 ### Pip (Python) ###
 # pip should only run if there is a virtualenv currently activated
 # prevents accidentally installing packages without a virtualenv

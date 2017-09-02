@@ -77,7 +77,7 @@ configuration files (dotfiles) in this repo.
   - Several config files aren't `stow`able--review the list below
 
 6. Other apps I commonly install:
-  - [atom](https://atom.io/)
+  - [atom](https://atom.io/) - be sure to install shell extensions.
   - [iTerm2](https://www.iterm2.com/downloads.html)
   - [Cyberduck](https://cyberduck.io/?l=en)
   - [PGAdmin](https://www.pgadmin.org/download/macosx.php) / [Postico](https://eggerapps.at/postico/)
