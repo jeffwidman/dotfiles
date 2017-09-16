@@ -31,7 +31,7 @@ export PGDATA="/usr/local/var/postgres"
 
 ### VirtualEnvWrapper ###
 # install virtualenvwrapper using `pip3 install virtualenvwrapper`
-export VIRTUALENVWRAPPER_PYTHON='python3'
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export PROJECT_HOME="$HOME/Code"
 
 
