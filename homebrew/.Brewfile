@@ -32,6 +32,7 @@ brew 'htop'
 brew 'iftop'
 brew 'ag' # Faster grep
 brew 'ncdu' # ncurses-based directory/file size viewer
+brew 'tree'
 
 # Databases
 brew 'sqlite'
