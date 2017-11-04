@@ -56,8 +56,7 @@ configuration files (dotfiles) in this repo.
   4. `$ chsh -s /usr/local/bin/zsh`
 
 5. Install Prezto:
-  - Install [my fork](https://github.com/jeffwidman/prezto) because it includes
-  a plugin for [Atom](http://atom.io).
+  - Install [my fork](https://github.com/jeffwidman/prezto) so I have flexibility in case I ever want to modify something.
 
   `git clone --recursive git@github.com:jeffwidman/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
 
@@ -77,7 +76,7 @@ configuration files (dotfiles) in this repo.
   - Several config files aren't `stow`able--review the list below
 
 6. Other apps I commonly install:
-  - [atom](https://atom.io/) - be sure to install shell extensions.
+  - [Visual Studio Code](https://code.visualstudio.com/) - be sure to [install the shell command `code`](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
   - [iTerm2](https://www.iterm2.com/downloads.html)
   - [Cyberduck](https://cyberduck.io/?l=en)
   - [PGAdmin](https://www.pgadmin.org/download/macosx.php) / [Postico](https://eggerapps.at/postico/)
@@ -85,7 +84,6 @@ configuration files (dotfiles) in this repo.
   - [Robomongo](https://robomongo.org/)
   - [SourceTree](https://www.sourcetreeapp.com/)
   - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-  - [Vagrant](https://www.vagrantup.com/downloads.html)
   - [BetterTouchTool](https://boastr.net//)
   - [OS X /etc/hosts GUI](https://github.com/specialunderwear/Hosts.prefpane)
 
