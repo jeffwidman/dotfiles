@@ -47,6 +47,11 @@ brew 'python3'
 # Ruby
 # Use [RVM](http://rvm.io/) instead of Homebrew.
 
+# Java
+# VisualVM is an alternative to Jconsole for JMX debugging
+brew cask install java  # required for visualvm
+brew cask install visualvm
+
 # Node
 # Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew.
 # Install manually using git clone rather than the install script:
