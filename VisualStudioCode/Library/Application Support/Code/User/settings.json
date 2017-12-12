@@ -4,5 +4,10 @@
     "files.trimTrailingWhitespace": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "python.linting.flake8Enabled": true,
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
+    "python.linting.pylintPath": "/usr/local/bin/pylint"
 }
