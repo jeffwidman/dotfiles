@@ -10,7 +10,7 @@ flake8
 pep8-naming
 pycodestyle
 pydocstyle
-# prospector
+pylint
 
 ## Packaging ##
 # virtualenv is included with >= Python 3.4
