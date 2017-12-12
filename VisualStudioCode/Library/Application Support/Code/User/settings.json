@@ -3,5 +3,6 @@
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "diffEditor.ignoreTrimWhitespace": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all"
 }
