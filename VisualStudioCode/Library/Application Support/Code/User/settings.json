@@ -9,5 +9,11 @@
     "python.linting.pydocstyleEnabled": true,
     "python.linting.flake8Path": "/usr/local/bin/flake8",
     "python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
-    "python.linting.pylintPath": "/usr/local/bin/pylint"
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "[python]": {
+        "editor.rulers": [
+            79,
+            120
+        ]
+    }
 }
