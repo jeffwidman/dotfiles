@@ -41,7 +41,7 @@ brew 'mariadb' # in place of MySQL
 brew 'redis'
 
 # Python
-brew 'python'
+brew 'python@2'
 brew 'python3'
 
 # Ruby
