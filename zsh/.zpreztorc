@@ -30,6 +30,7 @@ zstyle ':prezto:load' pmodule \
   'ssh' \
   'osx' \
   'homebrew' \
+  'command-not-found' \
   'git' \
   'rsync' \
   'ruby' \

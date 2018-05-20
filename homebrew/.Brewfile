@@ -66,3 +66,9 @@ brew 'neovim/neovim/neovim', args: ['HEAD']
 tap 'Caskroom/cask'
 brew 'Caskroom/cask/qlstephen'
 brew 'Caskroom/cask/betterzipql'
+
+# Command-not-found
+# this is used by prezto's command-not-found module:
+# https://github.com/sorin-ionescu/prezto/tree/master/modules/command-not-found#command-not-found
+# https://github.com/Homebrew/homebrew-command-not-found#install
+tap 'homebrew/command-not-found'
