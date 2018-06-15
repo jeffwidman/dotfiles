@@ -37,3 +37,10 @@ export PROJECT_HOME="$HOME/Code"
 
 ### XDG Configs pull directly from dotfiles ###
 export XDG_CONFIG_HOME="$HOME/.dotfiles"
+
+
+### Work CICD ###
+# If my day job's CICD tooling is present, add it to the $PATH:
+if [[ -s "$HOME/Code/cicd/bin/ci" ]]; then
+  export PATH="$PATH:$HOME/Code/cicd/bin"
+fi
