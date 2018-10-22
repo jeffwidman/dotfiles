@@ -15,5 +15,7 @@
             79,
             120
         ]
-    }
+    },
+    "gitlens.keymap": "alternate",
+    "gitlens.codeLens.enabled": false,
 }
