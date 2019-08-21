@@ -3,10 +3,6 @@
 #   `brew tap Homebrew/bundle`
 #   `brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
 
-
-# Add formulae that duplicate OS X software with updated versions:
-tap 'homebrew/dupes'
-
 # Generally life is simplest to not update OSX default SSH
 # Because making a non-Apple SSH work with the OSX Keychain can be a pain
 # As of OpenSSH 6.5 there's a much more secure encryption format for private keys:
@@ -14,7 +10,7 @@ tap 'homebrew/dupes'
 # Unfortunately doesn't seem to be supported by FileZilla (as of Feb 18, 2015)
 # Also, no need to install HPN SSH patch per posts from 'djm' here:
 # http://lwn.net/Articles/377723/
-# brew 'homebrew/dupes/ssh'
+# brew 'ssh'
 
 
 # Install all the things:
@@ -23,7 +19,7 @@ brew 'ssh-copy-id'
 brew 'fasd' # Fast directory switcher
 brew 'git'
 brew 'gibo' # quickly access Github's git ignore templates
-brew 'homebrew/dupes/less'
+brew 'less'
 brew 'lesspipe' # pre-processes various file formats so they can be paged via Less
 brew 'ctags'
 brew 'stow'
