@@ -16,6 +16,7 @@
             120
         ]
     },
+    "[git]": {"editor.rulers": [50]},
     "gitlens.keymap": "alternate",
     "gitlens.codeLens.enabled": false,
 }
