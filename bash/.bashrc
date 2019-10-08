@@ -10,6 +10,10 @@ if [[ $OSTYPE == darwin* ]]; then
 fi
 
 
+### Go ###
+export GOPATH="$HOME/Code/go"
+
+
 ### NVM ###
 # Tell NVM where to store its nodes.
 export NVM_DIR="$HOME/.nvm"

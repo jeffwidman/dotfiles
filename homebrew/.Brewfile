@@ -36,6 +36,9 @@ brew 'postgresql'
 brew 'mariadb' # in place of MySQL
 brew 'redis'
 
+# Go
+brew 'go'
+
 # Python
 brew 'python@2'
 brew 'python3'

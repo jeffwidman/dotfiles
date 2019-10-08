@@ -20,6 +20,10 @@ if [[ -s "$HOME/.ansible_vault_pass.txt" ]]; then
 fi
 
 
+### Go ###
+export GOPATH="$HOME/Code/go"
+
+
 ### NVM ###
 # Tell NVM where to store its nodes.
 export NVM_DIR="$HOME/.nvm"
