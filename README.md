@@ -106,7 +106,7 @@ configuration files (dotfiles) in this repo.
 ---
 ##List of config files
 
- - Atom - Settings are stowable, but packages purposefully excluded. Use `$ apm stars --install` to install all packages I've [starred](https://atom.io/users/jeffwidman/stars) on [atom.io/packages](https://atom.io/packages).
+ - VSCode - Settings are stowable, but extensions are purposefully excluded. At this time, there's no way to favorite/bookmark recommendations on the Visual Studio Marketplace. When there is, I'll start creating a list of the ones I use.
  - bash
  - git
  - Homebrew Brewfile - stowable, `brew bundle --global` will use $HOME/.Brewfile
