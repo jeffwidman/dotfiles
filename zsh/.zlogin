@@ -12,7 +12,7 @@
 } &!
 
 # Execute code only if STDERR is bound to a TTY.
-[[ -o INTERACTIVE && -t 2 ]] && {
+if [[ -o INTERACTIVE && -t 2 ]]; then
 
   # # Print a random, hopefully interesting, adage.
   # if (( $+commands[fortune] )); then
@@ -23,4 +23,4 @@
   # TODO: Print a random bible verse by mod'ing fortune or something else
   # ala http://www.pc-freak.net/blog/print-daily-bible-quote-shell-login-fortune-bible-mod-gnu-linux/
 
-} >&2
+fi >&2
