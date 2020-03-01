@@ -15,6 +15,12 @@
             100
         ]
     },
+    "[proto3]": {
+        "editor.rulers": [
+            80,
+            100
+        ]
+    },
     "python.linting.flake8Enabled": true,
     "python.linting.pydocstyleEnabled": true,
     "python.linting.flake8Path": "/usr/local/bin/flake8",
@@ -26,10 +32,5 @@
             120
         ]
     },
-    "[proto3]": {
-        "editor.rulers": [
-            80,
-            100
-        ]
-    },
+    "window.zoomLevel": -1,
 }
