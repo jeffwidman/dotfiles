@@ -40,8 +40,7 @@ brew 'redis'
 brew 'go'
 
 # Python
-brew 'python@2'
-brew 'python3'
+brew 'python'
 
 # Ruby
 # Use [RVM](http://rvm.io/) instead of Homebrew.
@@ -58,8 +57,7 @@ brew cask install visualvm
 
 # Neovim
 # I prefer over Vim for the simple reason they accepted one of my patches ;)
-tap 'neovim/homebrew-neovim'
-brew 'neovim/neovim/neovim', args: ['HEAD']
+brew 'neovim'
 
 # Quicklook plugins
 tap 'Caskroom/cask'
