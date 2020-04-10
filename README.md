@@ -56,9 +56,7 @@ configuration files (dotfiles) in this repo.
   4. `$ chsh -s /usr/local/bin/zsh`
 
 5. Install Prezto:
-  - Install [my fork](https://github.com/jeffwidman/prezto) so I have flexibility in case I ever want to modify something.
-
-  `git clone --recursive git@github.com:jeffwidman/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
+  `git clone --recursive git@github.com:sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
 
   - The default Prezto instructions say to symlink the default config files.
     **Don't do this**; instead use Stow to symlink your own config files (instructions below).
