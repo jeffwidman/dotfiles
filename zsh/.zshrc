@@ -12,6 +12,15 @@ fi
 # Use neovim instead of vi/vim
 alias vi='nvim'
 
+### GCloud integration ###
+# https://formulae.brew.sh/cask/google-cloud-sdk
+if [[ -s "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc" ]]; then
+ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+fi
+if [[ -s "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc" ]]; then
+ source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+fi
+
 
 ### Pip (Python) ###
 # pip should only run if there is a virtualenv currently activated
