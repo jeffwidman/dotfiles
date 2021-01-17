@@ -34,6 +34,13 @@ syspip3(){
   PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
 }
 
+# Use PuDB as the default debugger
+# Set here rather than .zshenv so that it's only set
+# for interactive sessions.
+# Requires `pip install pudb`
+export PYTHONBREAKPOINT="pudb.set_trace"
+
+
 
 ### iTerm2 shell integration ###
 # https://iterm2.com/documentation-shell-integration.html
