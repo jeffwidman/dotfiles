@@ -25,6 +25,8 @@ fi
 ### Pip (Python) ###
 # pip should only run if there is a virtualenv currently activated
 # prevents accidentally installing packages without a virtualenv
+# Set here rather than .zshenv so that it's only set
+# for interactive sessions.
 export PIP_REQUIRE_VIRTUALENV=true
 # create syspip workaround
 syspip2(){
