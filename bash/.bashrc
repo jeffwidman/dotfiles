@@ -38,10 +38,9 @@ export PGDATA="/usr/local/var/postgres"
 
 
 ### VirtualEnvWrapper ###
+# install virtualenvwrapper using `pip3 install virtualenvwrapper`
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 export PROJECT_HOME="$HOME/Code"
-# The variable $VIRTUALENVWRAPPER_VIRTUALENV_ARGS tells
-# virtualenvwrapper what arguments to pass to virtualenv.
-# export VIRTUALENVWRAPPER_VIRTUALENV_ARGS=''
 source /usr/local/bin/virtualenvwrapper.sh
 
 
