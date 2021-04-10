@@ -15,6 +15,10 @@ export GOPATH="$HOME/go"
 export PATH="$PATH:$GOPATH/bin"
 
 
+### Rust ###
+export PATH="$PATH:$HOME/.cargo/bin"
+
+
 ### NVM ###
 # Tell NVM where to store its nodes.
 export NVM_DIR="$HOME/.nvm"
