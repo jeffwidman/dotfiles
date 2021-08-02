@@ -23,17 +23,17 @@ fi
 
 
 ### Pip (Python) ###
-# pip should only run if there is a virtualenv currently activated
-# prevents accidentally installing packages without a virtualenv
+# pip should only install packages if there is a virtualenv currently
+# activated prevents accidentally installing packages without a virtualenv
 # Set here rather than .zshenv so that it's only set
 # for interactive sessions.
 export PIP_REQUIRE_VIRTUALENV=true
 # create syspip workaround
 syspip2(){
-  PIP_REQUIRE_VIRTUALENV="" pip2 "$@"
+  PIP_REQUIRE_VIRTUALENV=false pip2 "$@"
 }
 syspip3(){
-  PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
+  PIP_REQUIRE_VIRTUALENV=false pip3 "$@"
 }
 
 # Use PuDB as the default debugger

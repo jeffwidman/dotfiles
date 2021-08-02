@@ -25,15 +25,15 @@ export NVM_DIR="$HOME/.nvm"
 
 
 ### Pip (Python) ###
-# pip should only run if there is a virtualenv currently activated
-# prevents accidentally installing packages without a virtualenv
+# pip should only install packages if there is a virtualenv currently
+# activated prevents accidentally installing packages without a virtualenv
 export PIP_REQUIRE_VIRTUALENV=true
 # create syspip workaround
 syspip(){
-  PIP_REQUIRE_VIRTUALENV="" pip "$@"
+  PIP_REQUIRE_VIRTUALENV=false pip "$@"
 }
 syspip3(){
-  PIP_REQUIRE_VIRTUALENV="" pip3 "$@"
+  PIP_REQUIRE_VIRTUALENV=false pip3 "$@"
 }
 
 
