@@ -24,6 +24,9 @@ brew 'ag' # Faster grep
 brew 'ncdu' # ncurses-based directory/file size viewer
 brew 'tree'
 
+# Kubernetes
+brew 'k9s'
+
 # Databases
 brew 'sqlite'
 
