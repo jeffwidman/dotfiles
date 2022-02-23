@@ -31,9 +31,8 @@ configuration files (dotfiles) in this repo.
 3. Install desired binaries using your favorite package manager:
   - If on OSX, use Homebrew:
     1. Install [Homebrew](http://brew.sh/).
-    2. Install [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle): `$ brew tap Homebrew/bundle`
-    3. `$ brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
-    After the `.Brewfile` is symlinked into ``~/.Brewfile`, just use `$ brew bundle --global`.
+    2. Use [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) to install the stuff listed in the `.Brewfile`: `$ brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
+    After the `.Brewfile` is symlinked into `~/.Brewfile`, just use `$ brew bundle --global`.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
   - Ruby:
     1. Use [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage

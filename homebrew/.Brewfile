@@ -1,6 +1,5 @@
 # Jeff Widman's Brewfile
-# To make it so Homebrew can handle Brewfiles:
-#   `brew tap Homebrew/bundle`
+# Install via Homebrew:
 #   `brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
 
 # Generally life is simplest to not update OSX default SSH
