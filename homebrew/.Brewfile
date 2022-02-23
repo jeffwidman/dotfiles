@@ -54,6 +54,12 @@ brew 'python'
 brew 'neovim'
 
 # Quicklook plugins
+# See https://github.com/sindresorhus/quick-look-plugins
 tap 'homebrew/cask'
 cask 'qlstephen'
-cask 'betterzipql'
+cask 'apparency'
+# Use `syntax-highlight` instead of qlcolorcode and quicklook-json
+# Note: Follow the install instructions on their website for authorizing with MacOS security
+cask 'syntax-highlight'
+# for betterzipql, install it manually as we don't want the full-blown betterzip app
+# https://github.com/sindresorhus/quick-look-plugins#betterzipql
