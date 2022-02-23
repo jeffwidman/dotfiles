@@ -25,7 +25,7 @@ configuration files (dotfiles) in this repo.
       `defaults write -g AppleShowAllFiles -bool true`
 
 2. `git clone git@github.com:jeffwidman/dotfiles.git ~/.dotfiles`
-  - If cloning to a server without a Github-connected SSH key use 'https' instead:
+  - If cloning to a server without a Github-connected SSH key use `https` instead:
       `git clone https://github.com/jeffwidman/dotfiles.git ~/.dotfiles`
 
 3. Install desired binaries using your favorite package manager:
