@@ -31,9 +31,6 @@ brew 'tree'
 
 # Databases
 brew 'sqlite'
-brew 'postgresql'
-brew 'mariadb' # in place of MySQL
-brew 'redis'
 
 # Go
 brew 'go'
