@@ -4,11 +4,6 @@
 
 # Generally life is simplest to not update OSX default SSH
 # Because making a non-Apple SSH work with the OSX Keychain can be a pain
-# As of OpenSSH 6.5 there's a much more secure encryption format for private keys:
-# https://pthree.org/2014/12/08/super-size-the-strength-of-your-openssh-private-keys/
-# Unfortunately doesn't seem to be supported by FileZilla (as of Feb 18, 2015)
-# Also, no need to install HPN SSH patch per posts from 'djm' here:
-# http://lwn.net/Articles/377723/
 # brew 'ssh'
 
 
