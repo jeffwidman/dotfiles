@@ -37,11 +37,11 @@ configuration files (dotfiles) in this repo.
   - Ruby: Use [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
   - Node: Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew for managing Node.
 
-4. Make ZSH the default shell:
+4. Switch the default shell to the `zsh` installed by Homebrew (it's a newer version than the MacOS default):
   1. `$ sudo vim /etc/shells`
-  2. Append the path to zsh - Homebrew sticks it in `/usr/local/bin/zsh`
+  2. Append the path to zsh - Homebrew sticks it in `$(brew --prefix)/zsh`
   3. Save and exit
-  4. `$ chsh -s /usr/local/bin/zsh`
+  4. `$ chsh -s $(brew --prefix)/zsh`
 
 5. Install Prezto:
   `git clone --recursive git@github.com:sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"`
