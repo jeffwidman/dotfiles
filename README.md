@@ -34,19 +34,8 @@ configuration files (dotfiles) in this repo.
     2. Use [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) to install the stuff listed in the `.Brewfile`: `$ brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
     After the `.Brewfile` is symlinked into `~/.Brewfile`, just use `$ brew bundle --global`.
   - Make sure Stow gets installed, we'll use this later to symlink the dotfiles.
-  - Ruby:
-    1. Use [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage
-    gemsets, ruby versions, etc.
-  - Node:
-    1. Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew for
-    managing Node.
-    2. Install/upgrade [manually using `git`]
-    (https://github.com/creationix/nvm#manual-install) rather than `nvm`'s
-    `install.sh` script.
-    3. Unfortunately, `nvm` drastically slows shell startup time due to
-    https://github.com/creationix/nvm/issues/966, so after installing node
-    (`nvm install node`), run `nvm unalias default` to disable the alias. Just
-    remember to first run `nvm use node` whenever you want to run webpack, etc.
+  - Ruby: Use [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
+  - Node: Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew for managing Node.
 
 4. Make ZSH the default shell:
   1. `$ sudo vim /etc/shells`
