@@ -54,6 +54,6 @@ brew 'python'
 brew 'neovim'
 
 # Quicklook plugins
-tap 'Caskroom/cask'
-brew 'Caskroom/cask/qlstephen'
-brew 'Caskroom/cask/betterzipql'
+tap 'homebrew/cask'
+cask 'qlstephen'
+cask 'betterzipql'
