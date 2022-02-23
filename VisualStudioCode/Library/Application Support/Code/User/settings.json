@@ -23,14 +23,21 @@
     },
     "python.linting.flake8Enabled": true,
     "python.linting.pydocstyleEnabled": true,
-    "python.linting.flake8Path": "/usr/local/bin/flake8",
-    "python.linting.pydocstylePath": "/usr/local/bin/pydocstyle",
-    "python.linting.pylintPath": "/usr/local/bin/pylint",
     "[python]": {
         "editor.rulers": [
             79,
             120
         ]
     },
-    "window.zoomLevel": -1,
+    "python.languageServer": "Pylance",
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.typeCheckingMode": "basic",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.bracketPairColorization.enabled": true,
 }
