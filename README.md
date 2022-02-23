@@ -70,7 +70,8 @@ configuration files (dotfiles) in this repo.
   - [Robomongo](https://robomongo.org/)
   - [SourceTree](https://www.sourcetreeapp.com/)
   - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-  - [BetterTouchTool](https://boastr.net//)
+  - [BetterTouchTool](https://boastr.net/)
+  - [Rectangle](https://rectangleapp.com/)
   - [OS X /etc/hosts GUI](https://github.com/specialunderwear/Hosts.prefpane)
 
 7. ZSH completion scripts:
