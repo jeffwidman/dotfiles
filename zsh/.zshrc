@@ -43,6 +43,10 @@ syspip3(){
 export PYTHONBREAKPOINT="pudb.set_trace"
 
 
+### Rustup tab completion ###
+# https://rust-lang.github.io/rustup/installation/index.html#enable-tab-completion-for-bash-fish-zsh-or-powershell
+# TODO if I start actively needing to flip between Rust versions
+
 
 ### iTerm2 shell integration ###
 # https://iterm2.com/documentation-shell-integration.html
