@@ -41,9 +41,9 @@ export PGDATA="/usr/local/var/postgres"
 
 ### VirtualEnvWrapper ###
 # install virtualenvwrapper using `pip3 install virtualenvwrapper`
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=$(brew --prefix)/bin/python3
 export PROJECT_HOME="$HOME/Code"
-source /usr/local/bin/virtualenvwrapper.sh
+source $(brew --prefix)/bin/virtualenvwrapper.sh
 
 
 ### XDG Configs pull directly from dotfiles ###
