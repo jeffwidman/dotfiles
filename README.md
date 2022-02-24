@@ -1,6 +1,6 @@
 # My dotfiles
 
-Works on *nix, optimized for OS X.
+Works on *nix, optimized for macOS.
 
 Managed using [Stow](http://www.gnu.org/software/stow/), so you can pick and
 choose which programs to install.
@@ -12,14 +12,14 @@ choose which programs to install.
 Initially I tried entirely automating the entire install process, but quickly
 found it wasn't worth the maintenance. Starting from scratch happens so rarely
 for me that each time I was fiddling with the bootstrap scripts to work around
-a random issue (often due to a new version of OSX).
+a random issue (often due to a new version of macOS).
 
 Instead, it's simpler to install stuff by hand, and manage only the
 configuration files (dotfiles) in this repo.
 
 ---
 
-## Install steps on a clean OSX machine
+## Install steps on a clean macOS machine
 
 1. Make hidden files/folder [visible in Finder](http://apple.stackexchange.com/questions/99213/is-it-possible-to-always-show-hidden-dotfiles-in-open-save-dialogs):
 
@@ -214,7 +214,7 @@ Fonts that I like:
 - [@chriskempson](https://github.com/chriskempson/base16) - for base16
 - [@sorin-ionescu](https://github.com/sorin-ionescu/prezto) - for prezto
 - [@skwp](https://github.com/skwp/dotfiles) - another inspiration dotfiles repo
-- [@mathiasbyens](https://github.com/mathiasbynens/dotfiles) - for his awesome osx customization script
+- [@mathiasbyens](https://github.com/mathiasbynens/dotfiles) - for his awesome macOS customization script
 
 ---
 

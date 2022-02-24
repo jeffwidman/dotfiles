@@ -51,7 +51,7 @@ export PYTHONBREAKPOINT="pudb.set_trace"
 ### iTerm2 shell integration ###
 # https://iterm2.com/documentation-shell-integration.html
 # For safety, first verify that the file actually exists and that this is an
-# OSX box in case I accidentally stow'd the file from my dotfiles on a different platform
+# macOS box in case I accidentally stow'd the file from my dotfiles on a different platform
 if [[ -s "$HOME/.iterm2_shell_integration.zsh" && "$OSTYPE" = darwin* ]]; then
   source "$HOME/.iterm2_shell_integration.zsh"
 fi

@@ -3,7 +3,7 @@
 #
 
 
-### If on OS X:
+### If on macOS:
 if [[ "$OSTYPE" = darwin* ]] ; then
   # Tell compilers we have a 64 bit architecture
   # This resolves install issues with mysql, postgres, and

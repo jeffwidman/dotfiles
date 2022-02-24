@@ -2,8 +2,8 @@
 # Install via Homebrew:
 #   `brew bundle --file=~/.dotfiles/homebrew/.Brewfile`
 
-# Generally life is simplest to not update OSX default SSH
-# Because making a non-Apple SSH work with the OSX Keychain can be a pain
+# Generally life is simplest to not update macOS default SSH
+# Because making a non-Apple SSH work with the macOS Keychain can be a pain
 # brew 'ssh'
 
 

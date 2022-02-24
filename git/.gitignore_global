@@ -11,7 +11,7 @@
 .svn
 
 
-# OSX       taken from: https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+# macOS       taken from: https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
 # ----------------------------------------------------------------------------------------------
 .DS_Store
 .AppleDouble
