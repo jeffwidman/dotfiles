@@ -2,15 +2,6 @@
 # Executes commands at login pre-zshrc.
 #
 
-
-### If on macOS:
-if [[ "$OSTYPE" = darwin* ]] ; then
-  # Tell compilers we have a 64 bit architecture
-  # This resolves install issues with mysql, postgres, and
-  # other python packages with native non universal binary extensions
-  export ARCHFLAGS="-arch x86_64"
-fi
-
 #
 # Browser
 #

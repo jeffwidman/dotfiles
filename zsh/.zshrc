@@ -37,8 +37,7 @@ syspip3(){
 }
 
 # Use PuDB as the default debugger
-# Set here rather than .zshenv so that it's only set
-# for interactive sessions.
+# Set here rather than .zshenv so that it's only set for interactive sessions.
 # Requires `pip install pudb`
 export PYTHONBREAKPOINT="pudb.set_trace"
 

@@ -3,8 +3,6 @@
 
 # If on macOS:
 if [[ $OSTYPE == darwin* ]]; then
-    # Tell compilers we have a 64 bit architecture
-    export ARCHFLAGS="-arch x86_64"
     # Ensure Homebrew binaries take precedence
     export PATH=/usr/local/bin:/usr/local/sbin:"$PATH"
 fi
