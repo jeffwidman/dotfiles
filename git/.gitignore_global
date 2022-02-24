@@ -11,16 +11,24 @@
 .svn
 
 
-# macOS       taken from: https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
+# macOS       taken from: https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
 # ----------------------------------------------------------------------------------------------
+# General
 .DS_Store
 .AppleDouble
 .LSOverride
+# Icon must end with two \r
+Icon
 # Thumbnails
 ._*
-# Files that might appear on external disk
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
 .Spotlight-V100
+.TemporaryItems
 .Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 # Directories potentially created on remote AFP share
 .AppleDB
 .AppleDesktop
@@ -29,9 +37,27 @@ Temporary Items
 .apdisk
 
 
-
 # Windows   taken from: https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
 # ----------------------------------------------------------------------------------------------
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+# Dump file
+*.stackdump
+# Folder config file
+[Dd]esktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+# Windows shortcuts
+*.lnk
 # Windows image file caches
 Thumbs.db
 # Folder config file
@@ -41,26 +67,40 @@ Desktop.ini
 # ----------------------------------------------------------------------------------------------
 # Ignore tags created by etags, ctags, gtags (GNU global) and cscope
 TAGS
+.TAGS
 !TAGS/
 tags
+.tags
 !tags/
 gtags.files
 GTAGS
 GRTAGS
 GPATH
+GSYMS
 cscope.files
 cscope.out
 cscope.in.out
 cscope.po.out
 
-# Vim       taken from: https://github.com/github/gitignore/blob/master/Global/vim.gitignore
+# Vim       taken from: https://github.com/github/gitignore/blob/main/Global/Vim.gitignore
 # ----------------------------------------------------------------------------------------------
-[._]*.s[a-w][a-z]
-[._]s[a-w][a-z]
-*.un~
+# Swap
+[._]*.s[a-v][a-z]
+!*.svg  # comment out if you don't need vector files
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+# Session
 Session.vim
+Sessionx.vim
+# Temporary
 .netrwhist
 *~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
 
 
 # SASS
