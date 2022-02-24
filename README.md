@@ -110,7 +110,9 @@ configuration files (dotfiles) in this repo.
 
 7. Other apps I commonly install:
 
-    - [Visual Studio Code](https://code.visualstudio.com/) - be sure to [install the shell command `code`](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
+    - [Visual Studio Code](https://code.visualstudio.com/)
+      - Settings and extensions are saved via the built-in settings sync.
+      - Need to manually install the [shell command `code`](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
     - [iTerm2](https://www.iterm2.com/downloads.html)
     - [Cyberduck](https://cyberduck.io/?l=en)
     - [PGAdmin](https://www.pgadmin.org/download/macosx.php) / [Postico](https://eggerapps.at/postico/)
@@ -144,7 +146,6 @@ configuration files (dotfiles) in this repo.
 
 ## List of config files
 
-- VSCode - Settings are stowable, but extensions are purposefully excluded. At this time, there's no way to favorite/bookmark recommendations on the Visual Studio Marketplace. When there is, I'll start creating a list of the ones I use.
 - `bash`
 - `git`
 - `Brewfile` for `homebrew` - stowable, `brew bundle --global` will use `$HOME/.Brewfile`
@@ -155,6 +156,7 @@ configuration files (dotfiles) in this repo.
 - `vim` - for when Neovim isn't available
 - `vimify` - `.inputrc` and `.editrc` make vim commands work in many interactive
     shells, for example the `mysql` and `postgres` shells
+- VSCode IDE - don't backup its dotfiles, use its built-in settings sync instead.
 - `zsh` - includes `prezto` config files
 
 ---
