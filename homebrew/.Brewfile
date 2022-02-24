@@ -32,6 +32,7 @@ brew 'sqlite'
 
 # Go
 brew 'go'
+brew 'golangci-lint'
 
 # Python
 brew 'python'
@@ -52,6 +53,11 @@ brew 'python'
 # Neovim
 # I prefer over Vim for the simple reason they accepted one of my patches ;)
 brew 'neovim'
+
+# Other linters
+brew 'shellcheck'
+brew 'yamllint'
+
 
 # Quicklook plugins
 # See https://github.com/sindresorhus/quick-look-plugins
