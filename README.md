@@ -67,13 +67,11 @@ configuration files (dotfiles) in this repo.
     2. Append the path to Homebrew's installed `zsh`:
 
         ```shell
-        $(brew --prefix)/zsh`
+        sudo sh -c "echo $(brew --prefix)/bin/zsh >> /etc/shells"
         ```
 
-    3. Save and exit.
-
-    4. ```shell
-       chsh -s $(brew --prefix)/zsh
+    3. ```shell
+       chsh -s $(brew --prefix)/bin/zsh
        ```
 
 5. Install `prezto`:
