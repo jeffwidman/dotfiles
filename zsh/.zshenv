@@ -11,6 +11,16 @@ fi
 # Custom environment vars... Custom scripts generally go in .zshrc since it's
 # only loaded for interactive shells.
 
+# Set the list of directories that Zsh searches for programs.
+# TODO: Unlike prezto default, I set this here rather than in .zprofile
+# so that I can use $(brew --prefix) in .zshenv.
+# See also https://github.com/sorin-ionescu/prezto/issues/1988
+path=(
+  # Ensure Homebrew binaries take precedence - opt/homebrew used on M1 chips, usr/local used on intel chips.
+  /opt/homebrew/{bin,sbin}
+  /usr/local/{bin,sbin}
+  $path
+)
 
 ### Ansible ###
 # If I've created a vault password file, tell Ansible to use it.
@@ -40,7 +50,7 @@ export PGDATA="/usr/local/var/postgres"
 
 ### VirtualEnvWrapper ###
 # install virtualenvwrapper using `pip3 install virtualenvwrapper`
-export VIRTUALENVWRAPPER_PYTHON=$(brew --prefix)/bin/python3
+export VIRTUALENVWRAPPER_PYTHON="$(brew --prefix)/bin/python3"
 export PROJECT_HOME="$HOME/Code"
 
 

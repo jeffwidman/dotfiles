@@ -3,8 +3,8 @@
 
 # If on macOS:
 if [[ $OSTYPE == darwin* ]]; then
-    # Ensure Homebrew binaries take precedence
-    export PATH=/usr/local/bin:/usr/local/sbin:"$PATH"
+    # Ensure Homebrew binaries take precedence - opt/homebrew used on M1 chips, usr/local used on intel chips.
+    export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local/sbin:"$PATH"
 fi
 
 
