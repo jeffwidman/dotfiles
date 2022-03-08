@@ -39,7 +39,7 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 # Set the list of directories that Zsh searches for programs.
-# TODO: Commented out becauseu nlike prezto default zprofile,
+# TODO: Commented out because unlike prezto default zprofile,
 # I set this earlier in .zshenv so that I can use $(brew --prefix) in .zshenv.
 # See also https://github.com/sorin-ionescu/prezto/issues/1988
 # path=(
