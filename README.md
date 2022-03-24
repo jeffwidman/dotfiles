@@ -60,17 +60,13 @@ configuration files (dotfiles) in this repo.
 
 4. Switch the default shell to the `zsh` installed by Homebrew (it's a newer version than the macOS default):
 
-    1. ```shell
-       sudo vim /etc/shells
-       ```
-
-    2. Append the path to Homebrew's installed `zsh`:
+    1. Append the path to Homebrew's installed `zsh`:
 
         ```shell
         sudo sh -c "echo $(brew --prefix)/bin/zsh >> /etc/shells"
         ```
 
-    3. ```shell
+    2. ```shell
        chsh -s $(brew --prefix)/bin/zsh
        ```
 
@@ -89,15 +85,33 @@ configuration files (dotfiles) in this repo.
       git pull && git submodule update --init --recursive
       ```
 
-6. Now use `stow` to symlink the various config files:
+6. Now use `stow` to symlink whatever config files are relevant:
 
     1. ```shell
        cd ~/.dotfiles/
        ```
 
-    2. `$ stow PACKAGE_NAME` will symlink all the files inside of the package_name's folder into the parent directory (in this case, the user's home folder.)
+    2. `$ stow FOLDER_NAME` will symlink all the files inside of the folder into the parent directory (in this case, the user's home folder.)
 
-    `Stow` thoughtfully raises an error if the symlink destination already exists. For example, installing `zsh` creates a default `~/.zshrc` and `~/.zshlogin`. Just delete these default files before stowing your customized versions.
+    `stow` whatever is relevant:
+
+      - `bash`
+      - `flake8`
+      - `git`
+      - `homebrew` - stowable, `brew bundle --global` will use `$HOME/.Brewfile`
+      - `htop`
+      - `iterm2` - my `.zshrc` file is configured to look for the shell integration file.
+      - `pudb`
+      - `pydocstyle`
+      - `ruby`
+      - `ssh`
+      - `tmux` - #TODO
+      - `vim` - for when Neovim isn't available
+      - `vimify` - `.inputrc` and `.editrc` make vim commands work in many interactive
+      shells, for example the `mysql` and `postgres` shells
+      - `zsh` - includes `prezto` config files
+
+     `Stow` thoughtfully raises an error if the symlink destination already exists. For example, installing `zsh` creates a default `~/.zshrc` and `~/.zshlogin`. Just delete these default files before stowing your customized versions.
 
     If using a different OS than macOS, some packages may store their config files at a different location. For example, the fonts folder. Just specify the full destination path for `Stow`.
 
@@ -106,16 +120,19 @@ configuration files (dotfiles) in this repo.
       - <http://taihen.org/managing-dotfiles-with-gnu-stow/>
       - <http://kianmeng.org/blog/2014/03/08/using-gnu-stow-to-manage-your-dotfiles/>
 
-    Several config files aren't `stow`-able--review the list below.
+7. Other config files that aren't `stow`able:
+   - `nvim` - Neovim. No need to stow as it respects `$XDG_CONFIG_HOME`
+   - `python` - not stowable, use `pip install -r ~/.dotfiles/python/requirements.txt`
+   - VSCode IDE - don't backup its dotfiles, use its built-in settings sync instead.
 
-7. Other apps I commonly install:
+8. Other apps I commonly install:
 
     - [Visual Studio Code](https://code.visualstudio.com/)
       - Settings and extensions are saved via the built-in settings sync.
       - Need to manually install the [shell command `code`](https://code.visualstudio.com/docs/setup/mac#_launching-from-the-command-line).
     - [iTerm2](https://www.iterm2.com/downloads.html)
     - [Cyberduck](https://cyberduck.io/?l=en)
-    - [PGAdmin](https://www.pgadmin.org/download/macosx.php) / [Postico](https://eggerapps.at/postico/)
+    - [PGAdmin](https://www.pgadmin.org/download/macosx.php) or [Postico](https://eggerapps.at/postico/)
     - [MySQLWorkbench](http://dev.mysql.com/downloads/workbench/)
     - [Robomongo](https://robomongo.org/)
     - [SourceTree](https://www.sourcetreeapp.com/)
@@ -124,11 +141,15 @@ configuration files (dotfiles) in this repo.
     - [Rectangle](https://rectangleapp.com/)
     - [macOS `/etc/hosts` GUI](https://github.com/specialunderwear/Hosts.prefpane)
 
-8. `zsh` completion scripts:
+9. `zsh` completion scripts:
 
     Symlink any completion scripts into `/usr/local/share/zsh/site-functions/`.
     The filename must begin with an `_` or `zsh` will not read it. Prezto caches
-    the output of `compinit`, to rebuild the cache do: `rm -rf ~/.zcomp* && compinit`
+    the output of `compinit`, to rebuild the cache do:
+
+    ```shell
+    rm -rf ~/.zcomp* && compinit
+    ```
 
     Note: Many `homebrew` formulae automatically handle installing the formula's
     completion scripts. For example, `brew install the_silver_searcher`(`ag`)
@@ -144,37 +165,19 @@ configuration files (dotfiles) in this repo.
 
 ---
 
-## List of config files
-
-- `bash`
-- `git`
-- `Brewfile` for `homebrew` - stowable, `brew bundle --global` will use `$HOME/.Brewfile`
-- `nvim` - Neovim. No need to stow as it respects `$XDG_CONFIG_HOME`
-- `python` - not stowable, use `pip install -r ~/.dotfiles/python/requirements.txt`
-- `ruby`
-- `tmux` - #TODO
-- `vim` - for when Neovim isn't available
-- `vimify` - `.inputrc` and `.editrc` make vim commands work in many interactive
-    shells, for example the `mysql` and `postgres` shells
-- VSCode IDE - don't backup its dotfiles, use its built-in settings sync instead.
-- `zsh` - includes `prezto` config files
-
----
-
 ## Misc Notes
 
 List of possible macOS customizations: <https://mths.be/macos>
 
-For themes, check out the [Base16 template system](https://github.com/chriskempson/base16). It includes templates for
-theming many different apps.
+For themes, check out the [Base16 template system](https://github.com/chriskempson/base16).
 
-Colorschemes that I like:
+Favorite Colorschemes:
 
 - `monokai`
 - `solarized`
 - `railscasts`
 
-Fonts that I like:
+Favorite Fonts:
 
 - Ubuntu Monospace including powerline fix
 - Adobe Source Code (look for powerline fix)
@@ -197,24 +200,7 @@ Fonts that I like:
   - minibuffexplorer
   - the_silver_searcher (vs ctrlp?)
 
-- add ipython (replaces python interpreter)
-
 - add powerline - used in vim, [zsh](http://powerline.readthedocs.org/en/latest/usage/shell-prompts.html), ipython, and tmux
-
-- gitignore add:
-  - <https://github.com/github/gitignore/blob/master/Global/Vagrant.gitignore>
-  - <https://github.com/github/gitignore/blob/master/Global/VirtualEnv.gitignore>
-  - <https://github.com/github/gitignore/blob/master/Global/vim.gitignore>
-
----
-
-## Thanks
-
-- [@dave-tucker](https://github.com/dave-tucker/dotfiles) - Initial inspiration, although I totally rebooted my dotfiles several times since then
-- [@chriskempson](https://github.com/chriskempson/base16) - for base16
-- [@sorin-ionescu](https://github.com/sorin-ionescu/prezto) - for prezto
-- [@skwp](https://github.com/skwp/dotfiles) - another inspiration dotfiles repo
-- [@mathiasbyens](https://github.com/mathiasbynens/dotfiles) - for his awesome macOS customization script
 
 ---
 
