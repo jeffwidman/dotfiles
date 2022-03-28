@@ -148,7 +148,8 @@ configuration files (dotfiles) in this repo.
     the output of `compinit`, to rebuild the cache do:
 
     ```shell
-    rm -rf ~/.zcomp* && compinit
+    # typically for me this is located in ~/cache/prezto/zcompdump
+    rm -rf "${XDG_CACHE_HOME:-$HOME/.cache}/prezto/zcompdump" && compinit
     ```
 
     Note: Many `homebrew` formulae automatically handle installing the formula's
