@@ -103,6 +103,8 @@ configuration files (dotfiles) in this repo.
       - `iterm2` - my `.zshrc` file is configured to look for the shell integration file.
       - `pudb`
       - `pydocstyle`
+      - `pylint`
+      - `pypi`
       - `ruby`
       - `ssh`
       - `tmux` - #TODO
