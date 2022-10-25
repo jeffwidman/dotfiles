@@ -150,7 +150,7 @@ configuration files (dotfiles) in this repo.
     the output of `compinit`, to rebuild the cache do:
 
     ```shell
-    # typically for me this is located in ~/cache/prezto/zcompdump
+    # typically for me this is located in ~/.cache/prezto/zcompdump
     rm -rf "${XDG_CACHE_HOME:-$HOME/.cache}/prezto/zcompdump" && compinit
     ```
 
