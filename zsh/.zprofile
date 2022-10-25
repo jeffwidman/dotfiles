@@ -43,7 +43,9 @@ typeset -gU cdpath fpath mailpath path
 # I set this earlier in .zshenv so that I can use $(brew --prefix) in .zshenv.
 # See also https://github.com/sorin-ionescu/prezto/issues/1988
 # path=(
-#   /usr/local/{bin,sbin}
+#   $HOME/{,s}bin(N)
+#   /opt/{homebrew,local}/{,s}bin(N)
+#   /usr/local/{,s}bin(N)
 #   $path
 # )
 

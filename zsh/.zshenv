@@ -12,13 +12,13 @@ fi
 # only loaded for interactive shells.
 
 # Set the list of directories that Zsh searches for programs.
-# TODO: Unlike prezto default, I set this here rather than in .zprofile
+# Note: Unlike prezto default, I set this here rather than in .zprofile
 # so that I can use $(brew --prefix) in .zshenv.
 # See also https://github.com/sorin-ionescu/prezto/issues/1988
 path=(
-  # Ensure Homebrew binaries take precedence - opt/homebrew used on M1 chips, usr/local used on intel chips.
-  /opt/homebrew/{bin,sbin}
-  /usr/local/{bin,sbin}
+  $HOME/{,s}bin(N)
+  /opt/{homebrew,local}/{,s}bin(N)
+  /usr/local/{,s}bin(N)
   $path
 )
 
