@@ -50,6 +50,7 @@ export PGDATA="/usr/local/var/postgres"
 
 ### VirtualEnvWrapper ###
 # install virtualenvwrapper using `pip3 install virtualenvwrapper`
+# or if Python was installed via Homebrew use `syspip3 install --break-system-packages virtualenvwrapper`
 export VIRTUALENVWRAPPER_PYTHON="$(brew --prefix)/bin/python3"
 export PROJECT_HOME="$HOME/Code"
 
