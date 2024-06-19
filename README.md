@@ -119,7 +119,7 @@ configuration files (dotfiles) in this repo.
 
 7. Other config files that aren't `stow`able:
    - `nvim` - Neovim. No need to stow as it respects `$XDG_CONFIG_HOME`
-   - `python` - not stowable, use `pip install -r ~/.dotfiles/python/requirements.txt`
+   - `python` - not stowable, I basically use this as a cheat sheet to remind me of my favorite python packages.
    - VSCode IDE - don't backup its dotfiles, use its built-in settings sync instead.
 
 8. Other apps I commonly install:
@@ -166,8 +166,6 @@ configuration files (dotfiles) in this repo.
 ## Misc Notes
 
 List of possible macOS customizations: <https://mths.be/macos>
-
-For themes, check out the [Base16 template system](https://github.com/chriskempson/base16).
 
 Favorite Colorschemes:
 
