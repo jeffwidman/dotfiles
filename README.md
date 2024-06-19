@@ -100,7 +100,6 @@ configuration files (dotfiles) in this repo.
       - `git`
       - `homebrew` - stowable, `brew bundle --global` will use `$HOME/.Brewfile`
       - `iterm2` - my `.zshrc` file is configured to look for the shell integration file.
-      - `pudb`
       - `pydocstyle`
       - `pylint`
       - `pypi`
