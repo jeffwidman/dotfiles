@@ -5,13 +5,6 @@ ipython
 
 pudb  # best debugger around
 
-## Linters ##
-flake8
-pep8-naming
-pycodestyle
-pydocstyle
-pylint
-
 ## Packaging ##
 virtualenvwrapper
 pip-tools

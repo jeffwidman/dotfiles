@@ -96,12 +96,9 @@ configuration files (dotfiles) in this repo.
     `stow` whatever is relevant:
 
       - `bash`
-      - `flake8`
       - `git`
       - `homebrew` - stowable, `brew bundle --global` will use `$HOME/.Brewfile`
       - `iterm2` - my `.zshrc` file is configured to look for the shell integration file.
-      - `pydocstyle`
-      - `pylint`
       - `pypi`
       - `ruby`
       - `ssh`
