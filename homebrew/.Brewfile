@@ -10,7 +10,6 @@
 # Install all the things:
 brew 'zsh'
 brew 'ssh-copy-id'
-brew 'fasd' # Fast directory switcher
 brew 'git'
 brew 'gibo' # quickly access Github's git ignore templates
 brew 'less'
