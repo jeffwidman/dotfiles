@@ -60,9 +60,8 @@ brew 'yamllint'
 # Quicklook plugins
 # See https://github.com/sindresorhus/quick-look-plugins
 brew 'qlstephen'
+brew 'qlzipinfo' # use this instead of BetterZipQL
 brew 'apparency'
 # Use `syntax-highlight` instead of qlcolorcode and quicklook-json
 # Note: Follow the install instructions on their website for authorizing with MacOS security
 brew 'syntax-highlight'
-# for betterzipql, install it manually as we don't want the full-blown betterzip app
-# https://github.com/sindresorhus/quick-look-plugins#betterzipql
