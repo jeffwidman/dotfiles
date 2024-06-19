@@ -99,7 +99,6 @@ configuration files (dotfiles) in this repo.
       - `flake8`
       - `git`
       - `homebrew` - stowable, `brew bundle --global` will use `$HOME/.Brewfile`
-      - `htop`
       - `iterm2` - my `.zshrc` file is configured to look for the shell integration file.
       - `pudb`
       - `pydocstyle`
