@@ -56,7 +56,7 @@ configuration files (dotfiles) in this repo.
 
     - Make sure [`Stow`](https://www.gnu.org/software/stow/) gets installed, we'll use this later to symlink the dotfiles.
     - Ruby: Use [`rvm`](http://rvm.io/) instead of Homebrew. Much easier to manage gemsets, ruby versions, etc.
-    - Node: Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew for managing Node.
+    - Node: Use [`nvm`](https://github.com/nvm-sh/nvm) instead of Homebrew for managing Node.
 
 4. Switch the default shell to the `zsh` installed by Homebrew (it's a newer version than the macOS default):
 

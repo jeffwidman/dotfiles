@@ -44,9 +44,9 @@ brew 'python'
 # brew cask install visualvm
 
 # Node
-# Use [`nvm`](https://github.com/creationix/nvm) instead of Homebrew.
+# Use [`nvm`](https://github.com/nvm-sh/nvm) instead of Homebrew.
 # Install manually using git clone rather than the install script:
-# https://github.com/creationix/nvm#manual-install
+# https://github.com/nvm-sh/nvm#manual-install
 
 # Neovim
 # I prefer over Vim for the simple reason they accepted one of my patches ;)
