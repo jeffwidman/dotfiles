@@ -39,16 +39,12 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 # Set the list of directories that Zsh searches for programs.
-# TODO: Commented out because unlike prezto default zprofile,
-# I set this earlier in .zshenv so that I can use $(brew --prefix) in .zshenv.
-# See also https://github.com/sorin-ionescu/prezto/issues/1988
-# path=(
-#   $HOME/{,s}bin(N)
-#   /opt/{homebrew,local}/{,s}bin(N)
-#   /usr/local/{,s}bin(N)
-#   $path
-# )
-
+path=(
+  $HOME/{,s}bin(N)
+  /opt/{homebrew,local}/{,s}bin(N)
+  /usr/local/{,s}bin(N)
+  $path
+)
 
 #
 # Less
@@ -64,3 +60,44 @@ export LESS='-g -i -M -R -S -w -z-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+#
+# Additional Customizations
+#
+
+
+### Ansible ###
+# If I've created a vault password file, tell Ansible to use it.
+# For security, NEVER commit this file to source control.
+if [[ -s "$HOME/.ansible_vault_pass.txt" ]]; then
+  export ANSIBLE_VAULT_PASSWORD_FILE="$HOME/.ansible_vault_pass.txt"
+fi
+
+
+### Go ###
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
+
+
+### Rust ###
+export PATH="$PATH:$HOME/.cargo/bin"
+
+
+### NVM ###
+# Tell NVM where to store its nodes.
+export NVM_DIR="$HOME/.nvm"
+
+
+### PostgreSQL ###
+export PGDATA="/usr/local/var/postgres"
+
+
+### VirtualEnvWrapper ###
+# install virtualenvwrapper using `pip3 install virtualenvwrapper`
+# or if Python was installed via Homebrew use `syspip3 install --break-system-packages virtualenvwrapper`
+export VIRTUALENVWRAPPER_PYTHON="$(brew --prefix)/bin/python3"
+export PROJECT_HOME="$HOME/Code"
+
+
+### XDG Configs pull directly from dotfiles ###
+export XDG_CONFIG_HOME="$HOME/.dotfiles"
