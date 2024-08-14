@@ -110,3 +110,11 @@ tags
 # Python
 # ----------------------------------------------------------------------------------------------
 *.pyc
+
+
+# Ansible
+# ----------------------------------------------------------------------------------------------
+# This is the ansible vault password, so for security should never be committed.
+.ansible_vault_pass.txt
+.vault_pass.txt
+.vault_pass.py
