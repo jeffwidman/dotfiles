@@ -156,8 +156,8 @@ configuration files (dotfiles) in this repo.
     Docker completion scripts - I opened <https://github.com/sorin-ionescu/prezto/issues/1459> to try to get this into `prezto`:
 
       ```shell
-      ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion /usr/local/share/zsh/site-functions/_docker
-      ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion /usr/local/share/zsh/site-functions/_docker-compose
+      ln -s /Applications/Docker.app/Contents/Resources/etc/docker.zsh-completion /opt/homebrew/share/zsh/site-functions/_docker
+      ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion /opt/homebrew/share/zsh/site-functions/_docker-compose
       ````
 
 ---
