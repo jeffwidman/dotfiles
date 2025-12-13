@@ -136,7 +136,6 @@ configuration files (dotfiles) in this repo.
     - [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
     - [BetterTouchTool](https://boastr.net/)
     - [Rectangle](https://rectangleapp.com/)
-    - [macOS `/etc/hosts` GUI](https://github.com/specialunderwear/Hosts.prefpane)
 
 9. `zsh` completion scripts:
 
