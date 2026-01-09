@@ -41,9 +41,6 @@
 [push]
   default = simple
 
-[hub]
-  protocol = ssh # Github uses https by default
-
 [gist]
   private = yes
   browse = yes
