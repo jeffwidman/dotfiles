@@ -51,9 +51,6 @@
 [url "https://gist.github.com/"]
     insteadOf = gist:
 
-[url "https://bitbucket.org/"]
-    insteadOf = bb:
-
 [alias]
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
