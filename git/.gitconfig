@@ -1,6 +1,3 @@
-# Borrowed from https://github.com/matthewmccullough/dotfiles/
-# git-config man page: https://www.kernel.org/pub/software/scm/git/docs/git-config.html
-
 [user]
   name = Jeff Widman
   email = jeff@jeffwidman.com
