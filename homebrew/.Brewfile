@@ -58,8 +58,9 @@ brew 'yamllint'
 
 
 # Quicklook plugins
-brew 'qlzipinfo' # use this instead of BetterZipQL
+# NOTE: These apps _must_ be manually launched at least once for them to install the Quicklook hook
+# Additionally, if MacOS security complains, may need to manually open "Privacy & Security" setting and scroll down to authorize them.
 brew 'apparency'
-# Use `syntax-highlight` instead of qlcolorcode and quicklook-json
-# Note: Follow the install instructions on their website for authorizing with MacOS security
 brew 'syntax-highlight'
+# for quicklook previewing zip files, use grizzly: https://github.com/harshal2030/Grizzly
+# It just got written, so doesn't yet have a Homebrew formula: https://github.com/harshal2030/Grizzly/issues/3
