@@ -24,7 +24,7 @@ configuration files (dotfiles) in this repo.
 1. Make hidden files/folder [visible in Finder](http://apple.stackexchange.com/questions/99213/is-it-possible-to-always-show-hidden-dotfiles-in-open-save-dialogs):
 
     ```shell
-    defaults write -g AppleShowAllFiles -bool true
+    defaults write com.apple.finder AppleShowAllFiles -bool true; killall Finder
     ```
 
 2. Clone this repo:
