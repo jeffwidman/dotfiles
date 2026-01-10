@@ -62,5 +62,7 @@ brew 'yamllint'
 # Additionally, if MacOS security complains, may need to manually open "Privacy & Security" setting and scroll down to authorize them.
 brew 'apparency'
 brew 'syntax-highlight'
-# for quicklook previewing zip files, use grizzly: https://github.com/harshal2030/Grizzly
-# It just got written, so doesn't yet have a Homebrew formula: https://github.com/harshal2030/Grizzly/issues/3
+# for quicklook previews of zip files, there's a few options, but it's currently in flux...
+# https://github.com/harshal2030/Grizzly/issues/4
+# https://daringfireball.net/linked/2025/10/02/folder-quick-look
+# Not a fan of BetterZip because they install the whole app, when all I want is the quicklook plugin.
